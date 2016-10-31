@@ -2,11 +2,12 @@ DROP TABLE IF EXISTS book;
 
 CREATE TABLE book (
   id SERIAL PRIMARY KEY,
-  name VARCHAR(255) NOT NULL,
+  title VARCHAR(255) NOT NULL,
   publication_date DATE NOT NULL,
   description TEXT NOT NULL DEFAULT '',
   img_url VARCHAR(255) NOT NULL DEFAULT '',
-  is_active BOOLEAN DEFAULT TRUE
+  is_active BOOLEAN DEFAULT TRUE,
+  price DECIMAL DEFAULT 0
 );
 
 DROP TABLE IF EXISTS author;

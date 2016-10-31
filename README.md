@@ -15,12 +15,15 @@ Creating this web application will provide exposure to:
 
 ## Specifications
 - [ ] Any user can add books into the system via an admin page
+- [ ] Users can add their own images for books or authors.
 - [ ] Books entered in the system are listed on the home page, in pages of 10
 - [ ] Users can search for books by title OR by author OR by genre, and search results will be presented in a new page
 - [ ] Users can view book details on a book detail page, linked to from the listing or search pages
 - [ ] All code submissions are peer reviewed via GitHub PR by at least two members of the team, and master is always in a stable state (tests passed, site functions)
 ### Required
 - [ ] The artifact produced is properly licensed, preferably with the [MIT license](https://opensource.org/licenses/MIT).
+### Stretch Goal
+- [ ] Differentiate between users and admins.  Admins can add and edit books.
 ## Quality Rubric
 - Code is well formatted without any linting errors
 - Variables, functions, css classes, etc. are meaningfully named (no comments exist in code to explain functionality - the names serve that function)

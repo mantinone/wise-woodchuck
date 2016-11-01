@@ -7,7 +7,7 @@ CREATE TABLE book (
   description TEXT NOT NULL DEFAULT '',
   img_url VARCHAR(255) NOT NULL DEFAULT '',
   is_active BOOLEAN DEFAULT TRUE,
-  price DECIMAL DEFAULT 0
+  price MONEY DEFAULT 0
 );
 
 DROP TABLE IF EXISTS author;

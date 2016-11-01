@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "db": "dropdb woodchuckBooks; createdb woodchuckBooks; psql woodchuckBooks < schema.sql; psql woodchuckBooks < seed.sql"
   },
   "engines": {
     "node": "6.6.0"
@@ -17,8 +18,7 @@
     "morgan": "~1.7.0",
     "nodemon": "^1.11.0",
     "pg-promise": "^5.3.5",
-    "serve-favicon": "~2.3.0",
-    "dotenv": "^2.0.0"
+    "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
     "faker": "^3.1.0"

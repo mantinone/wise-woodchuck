@@ -199,298 +199,506 @@ insert into author (name, bio, img_url, is_active) values ('Bobby Wilson', 'In h
 insert into author (name, bio, img_url, is_active) values ('Jane George', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 'http://dummyimage.com/225x139.png/ff4444/ffffff', true);
 insert into author (name, bio, img_url, is_active) values ('Theresa Cunningham', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 'http://dummyimage.com/125x133.png/cc0000/ffffff', true);
 
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Veribet', '10/7/2016', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 'http://dummyimage.com/131x130.jpg/dddddd/000000', true, '$8.45');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Temp', '7/17/2016', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Veribet', '10/7/2016', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 'http://dummyimage.com/131x130.jpg/dddddd/000000', true, '$8.45');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Temp', '7/17/2016', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
 
-  Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 'http://dummyimage.com/137x121.bmp/cc0000/ffffff', true, '$9.74');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Ronstring', '9/5/2016', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 'http://dummyimage.com/137x121.bmp/cc0000/ffffff', true, '$9.74');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Ronstring', '9/5/2016', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
 
-  Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', 'http://dummyimage.com/129x234.png/ff4444/ffffff', true, '$1.13');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Ronstring', '2/21/2016', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
+Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', 'http://dummyimage.com/129x234.png/ff4444/ffffff', true, '$1.13');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Ronstring', '2/21/2016', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
 
-  Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.', 'http://dummyimage.com/158x219.jpg/5fa2dd/ffffff', true, '$4.04');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Asoka', '6/7/2016', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.', 'http://dummyimage.com/200x121.jpg/cc0000/ffffff', true, '$2.93');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Zaam-Dox', '6/1/2016', 'Fusce consequat. Nulla nisl. Nunc nisl.
+Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.', 'http://dummyimage.com/158x219.jpg/5fa2dd/ffffff', true, '$4.04');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Asoka', '6/7/2016', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.', 'http://dummyimage.com/200x121.jpg/cc0000/ffffff', true, '$2.93');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Zaam-Dox', '6/1/2016', 'Fusce consequat. Nulla nisl. Nunc nisl.
 
-  Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 'http://dummyimage.com/197x204.bmp/dddddd/000000', true, '$3.26');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Pannier', '2/27/2016', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 'http://dummyimage.com/182x141.bmp/5fa2dd/ffffff', true, '$4.92');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Ventosanzap', '5/22/2016', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 'http://dummyimage.com/197x204.bmp/dddddd/000000', true, '$3.26');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Pannier', '2/27/2016', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 'http://dummyimage.com/182x141.bmp/5fa2dd/ffffff', true, '$4.92');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Ventosanzap', '5/22/2016', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 
-  Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 'http://dummyimage.com/105x218.png/ff4444/ffffff', true, '$9.05');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Bytecard', '9/16/2016', 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 'http://dummyimage.com/237x214.bmp/dddddd/000000', true, '$7.97');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Vagram', '11/4/2015', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 'http://dummyimage.com/205x240.jpg/cc0000/ffffff', true, '$6.26');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Cardify', '6/1/2016', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 'http://dummyimage.com/127x227.bmp/dddddd/000000', true, '$2.63');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Subin', '3/30/2016', 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 'http://dummyimage.com/105x218.png/ff4444/ffffff', true, '$9.05');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Bytecard', '9/16/2016', 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 'http://dummyimage.com/237x214.bmp/dddddd/000000', true, '$7.97');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Vagram', '11/4/2015', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 'http://dummyimage.com/205x240.jpg/cc0000/ffffff', true, '$6.26');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Cardify', '6/1/2016', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 'http://dummyimage.com/127x227.bmp/dddddd/000000', true, '$2.63');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Subin', '3/30/2016', 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
 
-  Sed ante. Vivamus tortor. Duis mattis egestas metus.', 'http://dummyimage.com/165x208.bmp/dddddd/000000', true, '$3.41');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Flowdesk', '12/27/2015', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 'http://dummyimage.com/168x121.bmp/dddddd/000000', true, '$7.41');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Sonsing', '12/1/2015', 'In congue. Etiam justo. Etiam pretium iaculis justo.', 'http://dummyimage.com/181x180.jpg/dddddd/000000', true, '$3.96');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Vagram', '9/21/2016', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+Sed ante. Vivamus tortor. Duis mattis egestas metus.', 'http://dummyimage.com/165x208.bmp/dddddd/000000', true, '$3.41');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Flowdesk', '12/27/2015', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 'http://dummyimage.com/168x121.bmp/dddddd/000000', true, '$7.41');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Sonsing', '12/1/2015', 'In congue. Etiam justo. Etiam pretium iaculis justo.', 'http://dummyimage.com/181x180.jpg/dddddd/000000', true, '$3.96');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Vagram', '9/21/2016', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
 
-  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 'http://dummyimage.com/106x140.jpg/cc0000/ffffff', true, '$2.77');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Ventosanzap', '6/23/2016', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 'http://dummyimage.com/133x139.bmp/cc0000/ffffff', true, '$6.22');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Bitchip', '11/2/2015', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 'http://dummyimage.com/106x140.jpg/cc0000/ffffff', true, '$2.77');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Ventosanzap', '6/23/2016', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 'http://dummyimage.com/133x139.bmp/cc0000/ffffff', true, '$6.22');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Bitchip', '11/2/2015', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
 
-  Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 'http://dummyimage.com/244x136.bmp/5fa2dd/ffffff', true, '$4.57');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Tres-Zap', '11/17/2015', 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 'http://dummyimage.com/244x136.bmp/5fa2dd/ffffff', true, '$4.57');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Tres-Zap', '11/17/2015', 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
 
-  Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 'http://dummyimage.com/173x165.jpg/cc0000/ffffff', true, '$1.63');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Greenlam', '11/8/2015', 'Fusce consequat. Nulla nisl. Nunc nisl.', 'http://dummyimage.com/122x212.bmp/dddddd/000000', true, '$6.41');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Greenlam', '12/10/2015', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
+Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 'http://dummyimage.com/173x165.jpg/cc0000/ffffff', true, '$1.63');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Greenlam', '11/8/2015', 'Fusce consequat. Nulla nisl. Nunc nisl.', 'http://dummyimage.com/122x212.bmp/dddddd/000000', true, '$6.41');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Greenlam', '12/10/2015', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
 
-  Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', 'http://dummyimage.com/150x208.png/dddddd/000000', true, '$2.29');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Keylex', '10/5/2016', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
+Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', 'http://dummyimage.com/150x208.png/dddddd/000000', true, '$2.29');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Keylex', '10/5/2016', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
 
-  Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 'http://dummyimage.com/147x241.bmp/5fa2dd/ffffff', true, '$0.27');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Sub-Ex', '7/16/2016', 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 'http://dummyimage.com/147x241.bmp/5fa2dd/ffffff', true, '$0.27');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Sub-Ex', '7/16/2016', 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
 
-  Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 'http://dummyimage.com/126x193.bmp/ff4444/ffffff', true, '$8.70');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Zamit', '12/2/2015', 'In congue. Etiam justo. Etiam pretium iaculis justo.', 'http://dummyimage.com/152x143.bmp/cc0000/ffffff', true, '$9.47');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Otcom', '1/31/2016', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 'http://dummyimage.com/126x193.bmp/ff4444/ffffff', true, '$8.70');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Zamit', '12/2/2015', 'In congue. Etiam justo. Etiam pretium iaculis justo.', 'http://dummyimage.com/152x143.bmp/cc0000/ffffff', true, '$9.47');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Otcom', '1/31/2016', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
 
-  Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', 'http://dummyimage.com/120x153.bmp/dddddd/000000', true, '$6.59');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Home Ing', '9/23/2016', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', 'http://dummyimage.com/120x153.bmp/dddddd/000000', true, '$6.59');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Home Ing', '9/23/2016', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
 
-  Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 'http://dummyimage.com/153x213.jpg/5fa2dd/ffffff', true, '$0.51');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Hatity', '10/19/2016', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 'http://dummyimage.com/127x241.bmp/cc0000/ffffff', true, '$0.76');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Alpha', '7/15/2016', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 'http://dummyimage.com/153x213.jpg/5fa2dd/ffffff', true, '$0.51');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Hatity', '10/19/2016', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 'http://dummyimage.com/127x241.bmp/cc0000/ffffff', true, '$0.76');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Alpha', '7/15/2016', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
 
-  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 'http://dummyimage.com/138x223.png/ff4444/ffffff', true, '$7.80');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Bamity', '11/1/2015', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 'http://dummyimage.com/138x223.png/ff4444/ffffff', true, '$7.80');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Bamity', '11/1/2015', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
 
-  Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 'http://dummyimage.com/132x169.png/dddddd/000000', true, '$3.90');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Cardguard', '1/20/2016', 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 'http://dummyimage.com/108x169.png/dddddd/000000', true, '$3.01');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Stringtough', '1/6/2016', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 'http://dummyimage.com/159x193.png/dddddd/000000', true, '$8.51');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Stronghold', '5/6/2016', 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 'http://dummyimage.com/132x169.png/dddddd/000000', true, '$3.90');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Cardguard', '1/20/2016', 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 'http://dummyimage.com/108x169.png/dddddd/000000', true, '$3.01');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Stringtough', '1/6/2016', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 'http://dummyimage.com/159x193.png/dddddd/000000', true, '$8.51');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Stronghold', '5/6/2016', 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
 
-  Sed ante. Vivamus tortor. Duis mattis egestas metus.', 'http://dummyimage.com/209x206.jpg/cc0000/ffffff', true, '$9.79');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Job', '5/11/2016', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 'http://dummyimage.com/114x180.jpg/5fa2dd/ffffff', true, '$4.46');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Zathin', '6/18/2016', 'Fusce consequat. Nulla nisl. Nunc nisl.', 'http://dummyimage.com/245x220.png/cc0000/ffffff', true, '$1.00');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Sub-Ex', '5/30/2016', 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+Sed ante. Vivamus tortor. Duis mattis egestas metus.', 'http://dummyimage.com/209x206.jpg/cc0000/ffffff', true, '$9.79');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Job', '5/11/2016', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 'http://dummyimage.com/114x180.jpg/5fa2dd/ffffff', true, '$4.46');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Zathin', '6/18/2016', 'Fusce consequat. Nulla nisl. Nunc nisl.', 'http://dummyimage.com/245x220.png/cc0000/ffffff', true, '$1.00');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Sub-Ex', '5/30/2016', 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
 
-  Fusce consequat. Nulla nisl. Nunc nisl.', 'http://dummyimage.com/125x245.bmp/cc0000/ffffff', true, '$0.61');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Fixflex', '6/14/2016', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 'http://dummyimage.com/118x230.png/5fa2dd/ffffff', true, '$4.85');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Solarbreeze', '9/6/2016', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 'http://dummyimage.com/148x203.png/dddddd/000000', true, '$8.99');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Gembucket', '2/24/2016', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 'http://dummyimage.com/223x152.jpg/dddddd/000000', true, '$8.73');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Fix San', '10/30/2016', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 'http://dummyimage.com/143x111.png/ff4444/ffffff', true, '$1.45');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Duobam', '6/24/2016', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
+Fusce consequat. Nulla nisl. Nunc nisl.', 'http://dummyimage.com/125x245.bmp/cc0000/ffffff', true, '$0.61');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Fixflex', '6/14/2016', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 'http://dummyimage.com/118x230.png/5fa2dd/ffffff', true, '$4.85');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Solarbreeze', '9/6/2016', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 'http://dummyimage.com/148x203.png/dddddd/000000', true, '$8.99');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Gembucket', '2/24/2016', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 'http://dummyimage.com/223x152.jpg/dddddd/000000', true, '$8.73');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Fix San', '10/30/2016', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 'http://dummyimage.com/143x111.png/ff4444/ffffff', true, '$1.45');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Duobam', '6/24/2016', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
 
-  Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 'http://dummyimage.com/152x212.jpg/dddddd/000000', true, '$6.65');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Konklux', '5/26/2016', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 'http://dummyimage.com/160x238.jpg/5fa2dd/ffffff', true, '$9.59');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Bigtax', '12/26/2015', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 'http://dummyimage.com/166x166.jpg/cc0000/ffffff', true, '$4.12');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Otcom', '10/23/2016', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 'http://dummyimage.com/152x212.jpg/dddddd/000000', true, '$6.65');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Konklux', '5/26/2016', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 'http://dummyimage.com/160x238.jpg/5fa2dd/ffffff', true, '$9.59');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Bigtax', '12/26/2015', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 'http://dummyimage.com/166x166.jpg/cc0000/ffffff', true, '$4.12');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Otcom', '10/23/2016', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
 
-  Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 'http://dummyimage.com/215x190.png/ff4444/ffffff', true, '$6.07');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Tin', '11/24/2015', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 'http://dummyimage.com/215x190.png/ff4444/ffffff', true, '$6.07');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Tin', '11/24/2015', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
 
-  In congue. Etiam justo. Etiam pretium iaculis justo.', 'http://dummyimage.com/175x204.jpg/cc0000/ffffff', true, '$2.38');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Lotstring', '4/22/2016', 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+In congue. Etiam justo. Etiam pretium iaculis justo.', 'http://dummyimage.com/175x204.jpg/cc0000/ffffff', true, '$2.38');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Lotstring', '4/22/2016', 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
 
-  Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 'http://dummyimage.com/173x145.jpg/cc0000/ffffff', true, '$5.17');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Solarbreeze', '2/15/2016', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 'http://dummyimage.com/239x201.jpg/ff4444/ffffff', true, '$9.09');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Greenlam', '8/23/2016', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 'http://dummyimage.com/123x137.bmp/5fa2dd/ffffff', true, '$4.08');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Quo Lux', '11/29/2015', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 'http://dummyimage.com/173x145.jpg/cc0000/ffffff', true, '$5.17');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Solarbreeze', '2/15/2016', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 'http://dummyimage.com/239x201.jpg/ff4444/ffffff', true, '$9.09');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Greenlam', '8/23/2016', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 'http://dummyimage.com/123x137.bmp/5fa2dd/ffffff', true, '$4.08');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Quo Lux', '11/29/2015', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
 
-  Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 'http://dummyimage.com/222x183.bmp/dddddd/000000', true, '$3.58');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Y-Solowarm', '3/5/2016', 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 'http://dummyimage.com/222x183.bmp/dddddd/000000', true, '$3.58');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Y-Solowarm', '3/5/2016', 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
 
-  Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 'http://dummyimage.com/226x210.bmp/dddddd/000000', true, '$7.68');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Bytecard', '3/3/2016', 'In congue. Etiam justo. Etiam pretium iaculis justo.', 'http://dummyimage.com/155x247.png/dddddd/000000', true, '$6.01');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Voltsillam', '2/28/2016', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.', 'http://dummyimage.com/107x207.png/ff4444/ffffff', true, '$4.03');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Pannier', '1/30/2016', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 'http://dummyimage.com/226x210.bmp/dddddd/000000', true, '$7.68');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Bytecard', '3/3/2016', 'In congue. Etiam justo. Etiam pretium iaculis justo.', 'http://dummyimage.com/155x247.png/dddddd/000000', true, '$6.01');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Voltsillam', '2/28/2016', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.', 'http://dummyimage.com/107x207.png/ff4444/ffffff', true, '$4.03');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Pannier', '1/30/2016', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
 
-  Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 'http://dummyimage.com/158x181.png/cc0000/ffffff', true, '$2.73');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Veribet', '7/15/2016', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 'http://dummyimage.com/248x139.png/dddddd/000000', true, '$8.85');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Lotlux', '3/23/2016', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 'http://dummyimage.com/158x181.png/cc0000/ffffff', true, '$2.73');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Veribet', '7/15/2016', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 'http://dummyimage.com/248x139.png/dddddd/000000', true, '$8.85');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Lotlux', '3/23/2016', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
 
-  Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 'http://dummyimage.com/199x147.jpg/cc0000/ffffff', true, '$3.02');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Flowdesk', '8/10/2016', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 'http://dummyimage.com/139x127.png/cc0000/ffffff', true, '$5.58');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Fintone', '7/13/2016', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.', 'http://dummyimage.com/116x208.jpg/ff4444/ffffff', true, '$8.73');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Quo Lux', '8/8/2016', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 'http://dummyimage.com/199x147.jpg/cc0000/ffffff', true, '$3.02');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Flowdesk', '8/10/2016', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 'http://dummyimage.com/139x127.png/cc0000/ffffff', true, '$5.58');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Fintone', '7/13/2016', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.', 'http://dummyimage.com/116x208.jpg/ff4444/ffffff', true, '$8.73');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Quo Lux', '8/8/2016', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
 
-  Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'http://dummyimage.com/242x210.bmp/5fa2dd/ffffff', true, '$8.45');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Greenlam', '2/6/2016', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'http://dummyimage.com/242x210.bmp/5fa2dd/ffffff', true, '$8.45');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Greenlam', '2/6/2016', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
 
-  Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', 'http://dummyimage.com/208x105.jpg/5fa2dd/ffffff', true, '$3.21');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Zamit', '11/4/2015', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 'http://dummyimage.com/214x136.png/dddddd/000000', true, '$3.74');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Flowdesk', '6/2/2016', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 'http://dummyimage.com/159x176.bmp/5fa2dd/ffffff', true, '$8.56');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Cardify', '10/12/2016', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', 'http://dummyimage.com/208x105.jpg/5fa2dd/ffffff', true, '$3.21');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Zamit', '11/4/2015', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 'http://dummyimage.com/214x136.png/dddddd/000000', true, '$3.74');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Flowdesk', '6/2/2016', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 'http://dummyimage.com/159x176.bmp/5fa2dd/ffffff', true, '$8.56');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Cardify', '10/12/2016', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
 
-  Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 'http://dummyimage.com/183x167.jpg/dddddd/000000', true, '$3.56');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Ronstring', '9/26/2016', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 'http://dummyimage.com/183x167.jpg/dddddd/000000', true, '$3.56');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Ronstring', '9/26/2016', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
 
-  Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 'http://dummyimage.com/126x116.jpg/5fa2dd/ffffff', true, '$2.40');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Prodder', '7/24/2016', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 'http://dummyimage.com/226x104.png/5fa2dd/ffffff', true, '$9.40');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Solarbreeze', '5/10/2016', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 'http://dummyimage.com/227x195.jpg/5fa2dd/ffffff', true, '$2.11');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Stim', '2/26/2016', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 'http://dummyimage.com/172x128.png/5fa2dd/ffffff', true, '$3.71');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Stringtough', '7/8/2016', 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 'http://dummyimage.com/126x116.jpg/5fa2dd/ffffff', true, '$2.40');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Prodder', '7/24/2016', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 'http://dummyimage.com/226x104.png/5fa2dd/ffffff', true, '$9.40');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Solarbreeze', '5/10/2016', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 'http://dummyimage.com/227x195.jpg/5fa2dd/ffffff', true, '$2.11');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Stim', '2/26/2016', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 'http://dummyimage.com/172x128.png/5fa2dd/ffffff', true, '$3.71');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Stringtough', '7/8/2016', 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
 
-  Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 'http://dummyimage.com/168x112.png/cc0000/ffffff', true, '$4.69');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Daltfresh', '7/30/2016', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 'http://dummyimage.com/168x112.png/cc0000/ffffff', true, '$4.69');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Daltfresh', '7/30/2016', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
 
-  Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 'http://dummyimage.com/172x111.jpg/cc0000/ffffff', true, '$1.15');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Tin', '6/16/2016', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 'http://dummyimage.com/211x205.png/ff4444/ffffff', true, '$7.30');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Subin', '8/8/2016', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 'http://dummyimage.com/172x111.jpg/cc0000/ffffff', true, '$1.15');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Tin', '6/16/2016', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 'http://dummyimage.com/211x205.png/ff4444/ffffff', true, '$7.30');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Subin', '8/8/2016', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
-  Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 'http://dummyimage.com/107x217.jpg/5fa2dd/ffffff', true, '$6.47');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Regrant', '7/9/2016', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 'http://dummyimage.com/188x151.png/ff4444/ffffff', true, '$4.96');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Zoolab', '2/14/2016', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 'http://dummyimage.com/107x175.jpg/ff4444/ffffff', true, '$5.81');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Lotstring', '11/17/2015', 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 'http://dummyimage.com/107x217.jpg/5fa2dd/ffffff', true, '$6.47');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Regrant', '7/9/2016', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 'http://dummyimage.com/188x151.png/ff4444/ffffff', true, '$4.96');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Zoolab', '2/14/2016', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 'http://dummyimage.com/107x175.jpg/ff4444/ffffff', true, '$5.81');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Lotstring', '11/17/2015', 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
 
-  Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', 'http://dummyimage.com/235x179.png/5fa2dd/ffffff', true, '$1.43');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Ventosanzap', '7/17/2016', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', 'http://dummyimage.com/235x179.png/5fa2dd/ffffff', true, '$1.43');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Ventosanzap', '7/17/2016', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 
-  Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 'http://dummyimage.com/103x243.jpg/dddddd/000000', true, '$3.08');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Zathin', '12/26/2015', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 'http://dummyimage.com/242x144.jpg/5fa2dd/ffffff', true, '$0.42');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Stringtough', '3/8/2016', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 'http://dummyimage.com/123x197.png/dddddd/000000', true, '$4.57');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Subin', '3/20/2016', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', 'http://dummyimage.com/132x239.bmp/dddddd/000000', true, '$1.02');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('It', '4/28/2016', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 'http://dummyimage.com/103x243.jpg/dddddd/000000', true, '$3.08');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Zathin', '12/26/2015', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 'http://dummyimage.com/242x144.jpg/5fa2dd/ffffff', true, '$0.42');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Stringtough', '3/8/2016', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 'http://dummyimage.com/123x197.png/dddddd/000000', true, '$4.57');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Subin', '3/20/2016', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', 'http://dummyimage.com/132x239.bmp/dddddd/000000', true, '$1.02');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('It', '4/28/2016', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
 
-  Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 'http://dummyimage.com/136x144.jpg/ff4444/ffffff', true, '$6.05');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Asoka', '6/27/2016', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 'http://dummyimage.com/136x144.jpg/ff4444/ffffff', true, '$6.05');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Asoka', '6/27/2016', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
 
-  Phasellus in felis. Donec semper sapien a libero. Nam dui.', 'http://dummyimage.com/224x141.png/ff4444/ffffff', true, '$5.17');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Fintone', '10/18/2016', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', 'http://dummyimage.com/137x110.bmp/ff4444/ffffff', true, '$5.62');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Konklab', '2/5/2016', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+Phasellus in felis. Donec semper sapien a libero. Nam dui.', 'http://dummyimage.com/224x141.png/ff4444/ffffff', true, '$5.17');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Fintone', '10/18/2016', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', 'http://dummyimage.com/137x110.bmp/ff4444/ffffff', true, '$5.62');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Konklab', '2/5/2016', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
 
-  Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 'http://dummyimage.com/235x124.bmp/ff4444/ffffff', true, '$4.10');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Duobam', '8/8/2016', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 'http://dummyimage.com/235x124.bmp/ff4444/ffffff', true, '$4.10');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Duobam', '8/8/2016', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
 
-  Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 'http://dummyimage.com/239x146.png/ff4444/ffffff', true, '$5.06');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Lotlux', '5/25/2016', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 'http://dummyimage.com/218x201.png/cc0000/ffffff', true, '$0.40');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Veribet', '1/8/2016', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 'http://dummyimage.com/239x146.png/ff4444/ffffff', true, '$5.06');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Lotlux', '5/25/2016', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 'http://dummyimage.com/218x201.png/cc0000/ffffff', true, '$0.40');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Veribet', '1/8/2016', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
 
-  Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 'http://dummyimage.com/206x149.png/cc0000/ffffff', true, '$3.47');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Domainer', '12/11/2015', 'Fusce consequat. Nulla nisl. Nunc nisl.', 'http://dummyimage.com/172x232.jpg/cc0000/ffffff', true, '$0.50');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Overhold', '1/21/2016', 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', 'http://dummyimage.com/202x133.jpg/cc0000/ffffff', true, '$2.86');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Aerified', '9/9/2016', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 'http://dummyimage.com/206x149.png/cc0000/ffffff', true, '$3.47');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Domainer', '12/11/2015', 'Fusce consequat. Nulla nisl. Nunc nisl.', 'http://dummyimage.com/172x232.jpg/cc0000/ffffff', true, '$0.50');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Overhold', '1/21/2016', 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', 'http://dummyimage.com/202x133.jpg/cc0000/ffffff', true, '$2.86');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Aerified', '9/9/2016', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
 
-  Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 'http://dummyimage.com/136x146.jpg/5fa2dd/ffffff', true, '$6.78');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Vagram', '6/9/2016', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 'http://dummyimage.com/136x146.jpg/5fa2dd/ffffff', true, '$6.78');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Vagram', '6/9/2016', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
 
-  In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 'http://dummyimage.com/197x161.jpg/dddddd/000000', true, '$8.75');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Rank', '4/22/2016', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 'http://dummyimage.com/231x154.bmp/cc0000/ffffff', true, '$2.01');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Andalax', '8/21/2016', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 'http://dummyimage.com/167x112.jpg/cc0000/ffffff', true, '$8.47');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Asoka', '1/9/2016', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 'http://dummyimage.com/160x131.bmp/cc0000/ffffff', true, '$7.81');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Zamit', '10/23/2016', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 'http://dummyimage.com/197x161.jpg/dddddd/000000', true, '$8.75');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Rank', '4/22/2016', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 'http://dummyimage.com/231x154.bmp/cc0000/ffffff', true, '$2.01');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Andalax', '8/21/2016', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 'http://dummyimage.com/167x112.jpg/cc0000/ffffff', true, '$8.47');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Asoka', '1/9/2016', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 'http://dummyimage.com/160x131.bmp/cc0000/ffffff', true, '$7.81');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Zamit', '10/23/2016', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
 
-  Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 'http://dummyimage.com/174x242.jpg/dddddd/000000', true, '$4.93');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Domainer', '2/20/2016', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'http://dummyimage.com/248x220.jpg/dddddd/000000', true, '$2.75');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Span', '10/3/2016', 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 'http://dummyimage.com/174x242.jpg/dddddd/000000', true, '$4.93');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Domainer', '2/20/2016', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'http://dummyimage.com/248x220.jpg/dddddd/000000', true, '$2.75');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Span', '10/3/2016', 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
 
-  Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', 'http://dummyimage.com/129x174.jpg/dddddd/000000', true, '$8.23');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Trippledex', '9/25/2016', 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', 'http://dummyimage.com/129x174.jpg/dddddd/000000', true, '$8.23');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Trippledex', '9/25/2016', 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
 
-  Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', 'http://dummyimage.com/154x187.jpg/ff4444/ffffff', true, '$6.93');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Daltfresh', '6/13/2016', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', 'http://dummyimage.com/154x187.jpg/ff4444/ffffff', true, '$6.93');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Daltfresh', '6/13/2016', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
 
-  Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 'http://dummyimage.com/133x245.png/5fa2dd/ffffff', true, '$3.51');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Zaam-Dox', '5/29/2016', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 'http://dummyimage.com/228x227.bmp/ff4444/ffffff', true, '$1.29');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Prodder', '6/19/2016', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 'http://dummyimage.com/208x240.jpg/dddddd/000000', true, '$1.16');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Biodex', '9/18/2016', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 'http://dummyimage.com/180x131.png/5fa2dd/ffffff', true, '$4.12');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Alpha', '12/3/2015', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 'http://dummyimage.com/125x211.jpg/ff4444/ffffff', true, '$1.92');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Sonair', '9/30/2016', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 'http://dummyimage.com/133x245.png/5fa2dd/ffffff', true, '$3.51');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Zaam-Dox', '5/29/2016', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 'http://dummyimage.com/228x227.bmp/ff4444/ffffff', true, '$1.29');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Prodder', '6/19/2016', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 'http://dummyimage.com/208x240.jpg/dddddd/000000', true, '$1.16');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Biodex', '9/18/2016', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 'http://dummyimage.com/180x131.png/5fa2dd/ffffff', true, '$4.12');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Alpha', '12/3/2015', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 'http://dummyimage.com/125x211.jpg/ff4444/ffffff', true, '$1.92');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Sonair', '9/30/2016', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
 
-  Phasellus in felis. Donec semper sapien a libero. Nam dui.', 'http://dummyimage.com/112x165.png/ff4444/ffffff', true, '$4.89');
-  insert into book (title, publication_date, description, img_url, is_active, price) values ('Vagram', '11/30/2015', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 'http://dummyimage.com/221x118.bmp/ff4444/ffffff', true, '$9.56');
+Phasellus in felis. Donec semper sapien a libero. Nam dui.', 'http://dummyimage.com/112x165.png/ff4444/ffffff', true, '$4.89');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Vagram', '11/30/2015', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 'http://dummyimage.com/221x118.bmp/ff4444/ffffff', true, '$9.56');
 
-    insert into book_author (author_id, book_id) values (46, 30);
-    insert into book_author (author_id, book_id) values (93, 4);
-    insert into book_author (author_id, book_id) values (20, 26);
-    insert into book_author (author_id, book_id) values (33, 54);
-    insert into book_author (author_id, book_id) values (55, 65);
-    insert into book_author (author_id, book_id) values (79, 39);
-    insert into book_author (author_id, book_id) values (65, 80);
-    insert into book_author (author_id, book_id) values (32, 81);
-    insert into book_author (author_id, book_id) values (46, 97);
-    insert into book_author (author_id, book_id) values (58, 42);
-    insert into book_author (author_id, book_id) values (75, 82);
-    insert into book_author (author_id, book_id) values (77, 86);
-    insert into book_author (author_id, book_id) values (53, 51);
-    insert into book_author (author_id, book_id) values (59, 77);
-    insert into book_author (author_id, book_id) values (64, 48);
-    insert into book_author (author_id, book_id) values (100, 27);
-    insert into book_author (author_id, book_id) values (51, 38);
-    insert into book_author (author_id, book_id) values (64, 94);
-    insert into book_author (author_id, book_id) values (31, 50);
-    insert into book_author (author_id, book_id) values (14, 47);
-    insert into book_author (author_id, book_id) values (37, 44);
-    insert into book_author (author_id, book_id) values (20, 65);
-    insert into book_author (author_id, book_id) values (92, 31);
-    insert into book_author (author_id, book_id) values (87, 60);
-    insert into book_author (author_id, book_id) values (41, 84);
-    insert into book_author (author_id, book_id) values (42, 29);
-    insert into book_author (author_id, book_id) values (17, 80);
-    insert into book_author (author_id, book_id) values (73, 2);
-    insert into book_author (author_id, book_id) values (61, 87);
-    insert into book_author (author_id, book_id) values (16, 74);
-    insert into book_author (author_id, book_id) values (40, 60);
-    insert into book_author (author_id, book_id) values (96, 76);
-    insert into book_author (author_id, book_id) values (30, 93);
-    insert into book_author (author_id, book_id) values (55, 96);
-    insert into book_author (author_id, book_id) values (71, 90);
-    insert into book_author (author_id, book_id) values (50, 7);
-    insert into book_author (author_id, book_id) values (34, 61);
-    insert into book_author (author_id, book_id) values (35, 100);
-    insert into book_author (author_id, book_id) values (26, 88);
-    insert into book_author (author_id, book_id) values (80, 88);
-    insert into book_author (author_id, book_id) values (96, 28);
-    insert into book_author (author_id, book_id) values (52, 16);
-    insert into book_author (author_id, book_id) values (59, 12);
-    insert into book_author (author_id, book_id) values (90, 15);
-    insert into book_author (author_id, book_id) values (20, 61);
-    insert into book_author (author_id, book_id) values (75, 13);
-    insert into book_author (author_id, book_id) values (18, 14);
-    insert into book_author (author_id, book_id) values (27, 88);
-    insert into book_author (author_id, book_id) values (31, 16);
-    insert into book_author (author_id, book_id) values (23, 3);
-    insert into book_author (author_id, book_id) values (19, 35);
-    insert into book_author (author_id, book_id) values (58, 42);
-    insert into book_author (author_id, book_id) values (57, 94);
-    insert into book_author (author_id, book_id) values (37, 43);
-    insert into book_author (author_id, book_id) values (28, 9);
-    insert into book_author (author_id, book_id) values (5, 10);
-    insert into book_author (author_id, book_id) values (46, 48);
-    insert into book_author (author_id, book_id) values (83, 78);
-    insert into book_author (author_id, book_id) values (98, 99);
-    insert into book_author (author_id, book_id) values (86, 67);
-    insert into book_author (author_id, book_id) values (100, 28);
-    insert into book_author (author_id, book_id) values (88, 3);
-    insert into book_author (author_id, book_id) values (75, 77);
-    insert into book_author (author_id, book_id) values (92, 10);
-    insert into book_author (author_id, book_id) values (87, 90);
-    insert into book_author (author_id, book_id) values (23, 69);
-    insert into book_author (author_id, book_id) values (29, 52);
-    insert into book_author (author_id, book_id) values (30, 80);
-    insert into book_author (author_id, book_id) values (51, 89);
-    insert into book_author (author_id, book_id) values (58, 83);
-    insert into book_author (author_id, book_id) values (32, 12);
-    insert into book_author (author_id, book_id) values (85, 25);
-    insert into book_author (author_id, book_id) values (89, 100);
-    insert into book_author (author_id, book_id) values (90, 5);
-    insert into book_author (author_id, book_id) values (69, 61);
-    insert into book_author (author_id, book_id) values (79, 52);
-    insert into book_author (author_id, book_id) values (91, 35);
-    insert into book_author (author_id, book_id) values (53, 88);
-    insert into book_author (author_id, book_id) values (73, 83);
-    insert into book_author (author_id, book_id) values (18, 95);
-    insert into book_author (author_id, book_id) values (78, 7);
-    insert into book_author (author_id, book_id) values (19, 89);
-    insert into book_author (author_id, book_id) values (28, 72);
-    insert into book_author (author_id, book_id) values (91, 75);
-    insert into book_author (author_id, book_id) values (32, 6);
-    insert into book_author (author_id, book_id) values (76, 66);
-    insert into book_author (author_id, book_id) values (62, 2);
-    insert into book_author (author_id, book_id) values (64, 32);
-    insert into book_author (author_id, book_id) values (32, 35);
-    insert into book_author (author_id, book_id) values (24, 38);
-    insert into book_author (author_id, book_id) values (62, 24);
-    insert into book_author (author_id, book_id) values (86, 45);
-    insert into book_author (author_id, book_id) values (77, 98);
-    insert into book_author (author_id, book_id) values (30, 82);
-    insert into book_author (author_id, book_id) values (68, 7);
-    insert into book_author (author_id, book_id) values (21, 92);
-    insert into book_author (author_id, book_id) values (32, 50);
-    insert into book_author (author_id, book_id) values (43, 36);
-    insert into book_author (author_id, book_id) values (49, 91);
-    insert into book_author (author_id, book_id) values (86, 49);
+insert into book_author (author_id, book_id) values (46, 30);
+insert into book_author (author_id, book_id) values (93, 4);
+insert into book_author (author_id, book_id) values (20, 26);
+insert into book_author (author_id, book_id) values (33, 54);
+insert into book_author (author_id, book_id) values (55, 65);
+insert into book_author (author_id, book_id) values (79, 39);
+insert into book_author (author_id, book_id) values (65, 80);
+insert into book_author (author_id, book_id) values (32, 81);
+insert into book_author (author_id, book_id) values (46, 97);
+insert into book_author (author_id, book_id) values (58, 42);
+insert into book_author (author_id, book_id) values (75, 82);
+insert into book_author (author_id, book_id) values (77, 86);
+insert into book_author (author_id, book_id) values (53, 51);
+insert into book_author (author_id, book_id) values (59, 77);
+insert into book_author (author_id, book_id) values (64, 48);
+insert into book_author (author_id, book_id) values (100, 27);
+insert into book_author (author_id, book_id) values (51, 38);
+insert into book_author (author_id, book_id) values (64, 94);
+insert into book_author (author_id, book_id) values (31, 50);
+insert into book_author (author_id, book_id) values (14, 47);
+insert into book_author (author_id, book_id) values (37, 44);
+insert into book_author (author_id, book_id) values (20, 65);
+insert into book_author (author_id, book_id) values (92, 31);
+insert into book_author (author_id, book_id) values (87, 60);
+insert into book_author (author_id, book_id) values (41, 84);
+insert into book_author (author_id, book_id) values (42, 29);
+insert into book_author (author_id, book_id) values (17, 80);
+insert into book_author (author_id, book_id) values (73, 2);
+insert into book_author (author_id, book_id) values (61, 87);
+insert into book_author (author_id, book_id) values (16, 74);
+insert into book_author (author_id, book_id) values (40, 60);
+insert into book_author (author_id, book_id) values (96, 76);
+insert into book_author (author_id, book_id) values (30, 93);
+insert into book_author (author_id, book_id) values (55, 96);
+insert into book_author (author_id, book_id) values (71, 90);
+insert into book_author (author_id, book_id) values (50, 7);
+insert into book_author (author_id, book_id) values (34, 61);
+insert into book_author (author_id, book_id) values (35, 100);
+insert into book_author (author_id, book_id) values (26, 88);
+insert into book_author (author_id, book_id) values (80, 88);
+insert into book_author (author_id, book_id) values (96, 28);
+insert into book_author (author_id, book_id) values (52, 16);
+insert into book_author (author_id, book_id) values (59, 12);
+insert into book_author (author_id, book_id) values (90, 15);
+insert into book_author (author_id, book_id) values (20, 61);
+insert into book_author (author_id, book_id) values (75, 13);
+insert into book_author (author_id, book_id) values (18, 14);
+insert into book_author (author_id, book_id) values (27, 88);
+insert into book_author (author_id, book_id) values (31, 16);
+insert into book_author (author_id, book_id) values (23, 3);
+insert into book_author (author_id, book_id) values (19, 35);
+insert into book_author (author_id, book_id) values (58, 42);
+insert into book_author (author_id, book_id) values (57, 94);
+insert into book_author (author_id, book_id) values (37, 43);
+insert into book_author (author_id, book_id) values (28, 9);
+insert into book_author (author_id, book_id) values (5, 10);
+insert into book_author (author_id, book_id) values (46, 48);
+insert into book_author (author_id, book_id) values (83, 78);
+insert into book_author (author_id, book_id) values (98, 99);
+insert into book_author (author_id, book_id) values (86, 67);
+insert into book_author (author_id, book_id) values (100, 28);
+insert into book_author (author_id, book_id) values (88, 3);
+insert into book_author (author_id, book_id) values (75, 77);
+insert into book_author (author_id, book_id) values (92, 10);
+insert into book_author (author_id, book_id) values (87, 90);
+insert into book_author (author_id, book_id) values (23, 69);
+insert into book_author (author_id, book_id) values (29, 52);
+insert into book_author (author_id, book_id) values (30, 80);
+insert into book_author (author_id, book_id) values (51, 89);
+insert into book_author (author_id, book_id) values (58, 83);
+insert into book_author (author_id, book_id) values (32, 12);
+insert into book_author (author_id, book_id) values (85, 25);
+insert into book_author (author_id, book_id) values (89, 100);
+insert into book_author (author_id, book_id) values (90, 5);
+insert into book_author (author_id, book_id) values (69, 61);
+insert into book_author (author_id, book_id) values (79, 52);
+insert into book_author (author_id, book_id) values (91, 35);
+insert into book_author (author_id, book_id) values (53, 88);
+insert into book_author (author_id, book_id) values (73, 83);
+insert into book_author (author_id, book_id) values (18, 95);
+insert into book_author (author_id, book_id) values (78, 7);
+insert into book_author (author_id, book_id) values (19, 89);
+insert into book_author (author_id, book_id) values (28, 72);
+insert into book_author (author_id, book_id) values (91, 75);
+insert into book_author (author_id, book_id) values (32, 6);
+insert into book_author (author_id, book_id) values (76, 66);
+insert into book_author (author_id, book_id) values (62, 2);
+insert into book_author (author_id, book_id) values (64, 32);
+insert into book_author (author_id, book_id) values (32, 35);
+insert into book_author (author_id, book_id) values (24, 38);
+insert into book_author (author_id, book_id) values (62, 24);
+insert into book_author (author_id, book_id) values (86, 45);
+insert into book_author (author_id, book_id) values (77, 98);
+insert into book_author (author_id, book_id) values (30, 82);
+insert into book_author (author_id, book_id) values (68, 7);
+insert into book_author (author_id, book_id) values (21, 92);
+insert into book_author (author_id, book_id) values (32, 50);
+insert into book_author (author_id, book_id) values (43, 36);
+insert into book_author (author_id, book_id) values (49, 91);
+insert into book_author (author_id, book_id) values (86, 49);
+insert into book_author (author_id, book_id) values (1, 1);
+insert into book_author (author_id, book_id) values (6, 11);
+insert into book_author (author_id, book_id) values (12, 85);
+insert into book_author (author_id, book_id) values (2, 18);
+insert into book_author (author_id, book_id) values (99, 33);
+insert into book_author (author_id, book_id) values (84, 34);
+insert into book_author (author_id, book_id) values (3, 40);
+insert into book_author (author_id, book_id) values (4, 17);
+insert into book_author (author_id, book_id) values (7, 19);
+insert into book_author (author_id, book_id) values (8, 20);
+insert into book_author (author_id, book_id) values (9, 21);
+insert into book_author (author_id, book_id) values (10, 22);
+insert into book_author (author_id, book_id) values (11, 37);
+insert into book_author (author_id, book_id) values (13, 41);
+insert into book_author (author_id, book_id) values (15, 46);
+insert into book_author (author_id, book_id) values (22, 53);
+insert into book_author (author_id, book_id) values (44, 79);
+insert into book_author (author_id, book_id) values (97, 55);
+insert into book_author (author_id, book_id) values (25, 56);
+insert into book_author (author_id, book_id) values (36 , 57);
+insert into book_author (author_id, book_id) values (38, 58);
+insert into book_author (author_id, book_id) values (39, 59);
+insert into book_author (author_id, book_id) values (45, 62);
+insert into book_author (author_id, book_id) values (47, 63);
+insert into book_author (author_id, book_id) values (48, 73);
+insert into book_author (author_id, book_id) values (54, 64);
+insert into book_author (author_id, book_id) values (72, 68);
+insert into book_author (author_id, book_id) values (74, 70);
+insert into book_author (author_id, book_id) values (81, 71);
+insert into book_author (author_id, book_id) values (82, 76);
+insert into book_author (author_id, book_id) values (56, 45);
+insert into book_author (author_id, book_id) values (60, 49);
+insert into book_author (author_id, book_id) values (63, 22);
+insert into book_author (author_id, book_id) values (66, 34);
+insert into book_author (author_id, book_id) values (67, 49);
+insert into book_author (author_id, book_id) values (70, 49);
+insert into book_author (author_id, book_id) values (94, 66);
+insert into book_author (author_id, book_id) values (95, 23);
+insert into book_author (author_id, book_id) values (86, 89);
+insert into book_author (author_id, book_id) values (86, 42);
+insert into book_author (author_id, book_id) values (86, 49);
+
+
+
+INSERT INTO tag (item, description) values ('Non-Fiction', 'Educational things or stuff that really happened.');
+INSERT INTO tag (item, description) values ('Science-Fiction', 'It could happen?');
+INSERT INTO tag (item, description) values ('Fantasy', 'Its got magic and stuff.');;
+INSERT INTO tag (item, description) values ('Graphic Novels', 'Stories told with pictures (and usually words, too)');
+INSERT INTO tag (item, description) values ('Young Adult', 'Lots of relationship dramas, and kids and teens going on rebellious adventures.');
+INSERT INTO tag (item, description) values ('Childrens', 'Stories for kids!');
+INSERT INTO tag (item, description) values ('Poetry', 'Books of poems!');
+INSERT INTO tag (item, description) values ('Romance', 'Romance stories!');
+INSERT INTO tag (item, description) values ('Periodicals', 'Magazines and newspapers have authors listed for some reason.');
+INSERT INTO tag (item, description) values ('Mystery', 'Whodunnit, and other such tales.');
+INSERT INTO tag (item, description) values ('Horror', 'The creeping dread of the unknown.');
+INSERT INTO tag (item, description) values ('Cookbooks', 'Learn to cook!');
+
+
+insert into book_tag (book_id, tag_id) values (100, 12);
+insert into book_tag (book_id, tag_id) values (42, 8);
+insert into book_tag (book_id, tag_id) values (19, 4);
+insert into book_tag (book_id, tag_id) values (92, 7);
+insert into book_tag (book_id, tag_id) values (35, 7);
+insert into book_tag (book_id, tag_id) values (46, 2);
+insert into book_tag (book_id, tag_id) values (17, 3);
+insert into book_tag (book_id, tag_id) values (73, 1);
+insert into book_tag (book_id, tag_id) values (46, 9);
+insert into book_tag (book_id, tag_id) values (61, 4);
+insert into book_tag (book_id, tag_id) values (90, 6);
+insert into book_tag (book_id, tag_id) values (90, 4);
+insert into book_tag (book_id, tag_id) values (22, 6);
+insert into book_tag (book_id, tag_id) values (55, 4);
+insert into book_tag (book_id, tag_id) values (43, 7);
+insert into book_tag (book_id, tag_id) values (46, 10);
+insert into book_tag (book_id, tag_id) values (64, 5);
+insert into book_tag (book_id, tag_id) values (36, 4);
+insert into book_tag (book_id, tag_id) values (54, 11);
+insert into book_tag (book_id, tag_id) values (16, 6);
+insert into book_tag (book_id, tag_id) values (77, 8);
+insert into book_tag (book_id, tag_id) values (11, 6);
+insert into book_tag (book_id, tag_id) values (41, 10);
+insert into book_tag (book_id, tag_id) values (33, 1);
+insert into book_tag (book_id, tag_id) values (97, 8);
+insert into book_tag (book_id, tag_id) values (26, 7);
+insert into book_tag (book_id, tag_id) values (82, 3);
+insert into book_tag (book_id, tag_id) values (95, 5);
+insert into book_tag (book_id, tag_id) values (87, 12);
+insert into book_tag (book_id, tag_id) values (41, 11);
+insert into book_tag (book_id, tag_id) values (39, 4);
+insert into book_tag (book_id, tag_id) values (66, 12);
+insert into book_tag (book_id, tag_id) values (16, 10);
+insert into book_tag (book_id, tag_id) values (63, 12);
+insert into book_tag (book_id, tag_id) values (17, 2);
+insert into book_tag (book_id, tag_id) values (51, 9);
+insert into book_tag (book_id, tag_id) values (68, 3);
+insert into book_tag (book_id, tag_id) values (50, 4);
+insert into book_tag (book_id, tag_id) values (71, 10);
+insert into book_tag (book_id, tag_id) values (42, 9);
+insert into book_tag (book_id, tag_id) values (94, 10);
+insert into book_tag (book_id, tag_id) values (98, 8);
+insert into book_tag (book_id, tag_id) values (13, 11);
+insert into book_tag (book_id, tag_id) values (28, 10);
+insert into book_tag (book_id, tag_id) values (38, 6);
+insert into book_tag (book_id, tag_id) values (67, 11);
+insert into book_tag (book_id, tag_id) values (11, 11);
+insert into book_tag (book_id, tag_id) values (98, 3);
+insert into book_tag (book_id, tag_id) values (36, 2);
+insert into book_tag (book_id, tag_id) values (5, 4);
+insert into book_tag (book_id, tag_id) values (55, 7);
+insert into book_tag (book_id, tag_id) values (69, 12);
+insert into book_tag (book_id, tag_id) values (26, 6);
+insert into book_tag (book_id, tag_id) values (91, 6);
+insert into book_tag (book_id, tag_id) values (32, 3);
+insert into book_tag (book_id, tag_id) values (91, 7);
+insert into book_tag (book_id, tag_id) values (48, 10);
+insert into book_tag (book_id, tag_id) values (55, 4);
+insert into book_tag (book_id, tag_id) values (7, 9);
+insert into book_tag (book_id, tag_id) values (68, 6);
+insert into book_tag (book_id, tag_id) values (42, 9);
+insert into book_tag (book_id, tag_id) values (23, 7);
+insert into book_tag (book_id, tag_id) values (23, 4);
+insert into book_tag (book_id, tag_id) values (58, 5);
+insert into book_tag (book_id, tag_id) values (90, 5);
+insert into book_tag (book_id, tag_id) values (19, 8);
+insert into book_tag (book_id, tag_id) values (50, 7);
+insert into book_tag (book_id, tag_id) values (96, 6);
+insert into book_tag (book_id, tag_id) values (79, 3);
+insert into book_tag (book_id, tag_id) values (38, 3);
+insert into book_tag (book_id, tag_id) values (59, 1);
+insert into book_tag (book_id, tag_id) values (66, 9);
+insert into book_tag (book_id, tag_id) values (60, 1);
+insert into book_tag (book_id, tag_id) values (27, 4);
+insert into book_tag (book_id, tag_id) values (28, 4);
+insert into book_tag (book_id, tag_id) values (97, 12);
+insert into book_tag (book_id, tag_id) values (81, 3);
+insert into book_tag (book_id, tag_id) values (47, 5);
+insert into book_tag (book_id, tag_id) values (46, 3);
+insert into book_tag (book_id, tag_id) values (26, 1);
+insert into book_tag (book_id, tag_id) values (95, 6);
+insert into book_tag (book_id, tag_id) values (18, 6);
+insert into book_tag (book_id, tag_id) values (81, 2);
+insert into book_tag (book_id, tag_id) values (64, 7);
+insert into book_tag (book_id, tag_id) values (85, 8);
+insert into book_tag (book_id, tag_id) values (98, 8);
+insert into book_tag (book_id, tag_id) values (11, 6);
+insert into book_tag (book_id, tag_id) values (6, 7);
+insert into book_tag (book_id, tag_id) values (36, 8);
+insert into book_tag (book_id, tag_id) values (46, 2);
+insert into book_tag (book_id, tag_id) values (82, 10);
+insert into book_tag (book_id, tag_id) values (80, 6);
+insert into book_tag (book_id, tag_id) values (70, 5);
+insert into book_tag (book_id, tag_id) values (59, 5);
+insert into book_tag (book_id, tag_id) values (4, 2);
+insert into book_tag (book_id, tag_id) values (40, 4);
+insert into book_tag (book_id, tag_id) values (23, 1);
+insert into book_tag (book_id, tag_id) values (34, 10);
+insert into book_tag (book_id, tag_id) values (30, 12);
+insert into book_tag (book_id, tag_id) values (49, 8);
+insert into book_tag (book_id, tag_id) values (1, 4);
+insert into book_tag (book_id, tag_id) values (2, 9);
+insert into book_tag (book_id, tag_id) values (3, 6);
+insert into book_tag (book_id, tag_id) values (8, 3);
+insert into book_tag (book_id, tag_id) values (9, 3);
+insert into book_tag (book_id, tag_id) values (10, 8);
+insert into book_tag (book_id, tag_id) values (12, 8);
+insert into book_tag (book_id, tag_id) values (14, 8);
+insert into book_tag (book_id, tag_id) values (15, 10);
+insert into book_tag (book_id, tag_id) values (20, 8);
+insert into book_tag (book_id, tag_id) values (21, 8);
+insert into book_tag (book_id, tag_id) values (24, 7);
+insert into book_tag (book_id, tag_id) values (25, 6);
+insert into book_tag (book_id, tag_id) values (29, 1);
+insert into book_tag (book_id, tag_id) values (31, 8);
+insert into book_tag (book_id, tag_id) values (37, 5);
+insert into book_tag (book_id, tag_id) values (44, 8);
+insert into book_tag (book_id, tag_id) values (45, 10);
+insert into book_tag (book_id, tag_id) values (52, 8);
+insert into book_tag (book_id, tag_id) values (53, 8);
+insert into book_tag (book_id, tag_id) values (56, 8);
+insert into book_tag (book_id, tag_id) values (57, 8);
+insert into book_tag (book_id, tag_id) values (62, 12);
+insert into book_tag (book_id, tag_id) values (65, 1);
+insert into book_tag (book_id, tag_id) values (72, 8);
+insert into book_tag (book_id, tag_id) values (74, 8);
+insert into book_tag (book_id, tag_id) values (75, 7);
+insert into book_tag (book_id, tag_id) values (76, 8);
+insert into book_tag (book_id, tag_id) values (78, 7);
+insert into book_tag (book_id, tag_id) values (83, 4);
+insert into book_tag (book_id, tag_id) values (84, 8);
+insert into book_tag (book_id, tag_id) values (86, 8);
+insert into book_tag (book_id, tag_id) values (88, 9);
+insert into book_tag (book_id, tag_id) values (89, 8);
+insert into book_tag (book_id, tag_id) values (93, 8);
+insert into book_tag (book_id, tag_id) values (99, 8);
+
+
+
+
+INSERT INTO customer (name, ship_address, password, is_admin, favorite_book) VALUES ('Boris Karlov', '123 Somewhere Ave', 'password1', false, 12);
+INSERT INTO customer (name, ship_address, password, is_admin) VALUES ('Admin', 'here', 'password2', 'true');
+
+
+INSERT INTO transaction (customer_id, order_date, total) VALUES (1, CURRENT_TIMESTAMP, 17.15);
+
+INSERT INTO book_transaction (transaction_id, book_id) VALUES (1, 20);
+INSERT INTO book_transaction (transaction_id, book_id) VALUES (1, 33);
+INSERT INTO book_transaction (transaction_id, book_id) VALUES (1, 2);
+INSERT INTO book_transaction (transaction_id, book_id) VALUES (1, 97);

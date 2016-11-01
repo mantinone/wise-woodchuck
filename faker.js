@@ -13,7 +13,7 @@ const fakeAuthors = author => {
 const generateAuthors = () => {
   for (let i = 0; i < 50; i++){
     fakeAuthors({
-      name: `${faker.name.firstName()} ${faker.name.lastName()}`
+      name: `${faker.name.firstName()} ${faker.name.lastName()}`,
       bio: faker.lorem.paragraph(),
       img_url: faker.image.people()
     })
@@ -28,10 +28,10 @@ const fakeBooks = book => {
 const generateBooks = () => {
   for (let i = 0; i < 70; i++){
     fakeBooks({
-      title: faker.random.catch_phrase_noun()
-      publication_date: faker.date.past()
+      title: faker.lorem.words(),
+      publication_date: faker.date.past(),
       description: faker.lorem.paragraph(),
-      img_url: faker.image.abstractImage()
+      img_url: faker.image.cats()
     })
   }
 }
@@ -44,4 +44,34 @@ const findBooks = () => {
 const findAuthors = () => {
   const sql = 'SELECT * FROM author'
   return db.any( sql )
+}
+
+const bookAuthors = (ids) => {
+  const sql = 'INSERT INTO book_author (book_id, author_id) VALUES ( $1, $2 )'
+
+  db.any( sql, [ ids.book_id, ids.author_id])
+}
+
+const generateBookAuthors = () => {
+  findBooks().then( books => {
+    Promise.resolve( findAuthors() )
+      .then( authors => {
+        const queries = []
+
+        for( let i = 0; i < 80; i++ ) {
+          queries.push(
+            bookAuthors({
+              book_id: faker.random.arrayElement( books ).id,
+              author_id: faker.random.arrayElement( authors ).id
+            })
+          )
+        }
+
+        Promise.all( queries )
+      })
+  })
+}
+
+module.exports = {
+  generateAuthors, generateBooks, generateBookAuthors
 }

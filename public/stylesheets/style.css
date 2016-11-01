@@ -1,8 +1,24 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #2F2235;
 }
 
 a {
-  color: #00B7FF;
+  color: #84B082;
+}
+
+
+.bookList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  background-color: #3F3244
+}
+
+.bookThumbnail {
+  padding: 10px;
+  margin: 6px;
+  background-color: #60495A
 }

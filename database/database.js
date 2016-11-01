@@ -27,4 +27,22 @@ const Author = {
   getBooks: author_id => db.any(getBookByAuthorId, [author_id])
 }
 
+// const createBook => (request, response, next) {
+//   req.body.date = parseInt(req.body.date);
+//   db.none('INSERT INTO book(title, publication_date, description, img_url)' +
+//             'values(${title}, ${publication_date}, ${description}, ${img_url});',
+//           req.body)
+//           .then(function () {
+//             // res.status(200)
+//             //   .json({
+//             //     status: 'success',
+//             //     message: 'Inserted one puppy'
+//             //   });
+//               res.redirect('/');
+//           })
+//           .catch(function (err) {
+//             return next(err);
+//           })
+// }
+
 module.exports = { Book, Author }

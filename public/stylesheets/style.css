@@ -22,3 +22,39 @@ a {
   margin: 6px;
   background-color: #60495A
 }
+
+.button{
+    height: 50px;
+    padding: 10px 25px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background-color: #E5E5E5;
+    color: #111163;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #D6D6D6;
+    border: 1px solid #8E8E8E;
+}
+
+form {
+  display:flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin-top: 10px;
+}
+
+form input {
+  min-width: 170px;
+  flex: 1 3 27%;
+  margin: 10px;
+  padding: 5px 15px;
+}
+
+form textarea {
+  min-width: 300px;
+  flex: 1 1 90%;
+  margin: 10px;
+  padding: 5px 15px;
+}

@@ -25,4 +25,18 @@ router.get('/author/:author_id', (request, response) => {
   })
 })
 
+router.get('/addAuthor', (request, response) => {
+  response.render('addAuthor', {
+  })
+  return
+})
+
+router.get('/addBook', (request, response) => {
+  response.render('addBook', {
+  })
+  return
+})
+
+// router.post('/addBook', db.createBook);
+
 module.exports = router;

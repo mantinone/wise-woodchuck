@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+    //- a(class='button' id='addBook' href="/addBook") Add Book #{/*what put here?*/}
+    h3 Enter information to create new book:
+      form
+        //- (method="post" action='/addBook')
+        input(type="text", placeholder="Title", name="title")
+        input(type="date", placeholder="Date Published (YYYY-MM-DD)", name="publication_date")
+        input(type="text", placeholder="Cover Image (link)", name="img_url")
+        textarea(rows="4" cols="50", placeholder="Description", name="description")
+        input(type="submit" class='button' value="Create Book!")

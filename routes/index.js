@@ -4,7 +4,7 @@ const { Book, Author } = require('../database/database.js')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Bookstore by Max and Diana' });
+  res.render('index', { title: 'Woodchuck Books' });
 });
 
 router.get('/book/:book_id', (request, response) => {

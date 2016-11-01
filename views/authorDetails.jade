@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  img(src='#{author.img_url}', alt="this is a photo of the author", height="420", width="420")
+  h1 #{author.name}
+  p #{author.bio}
+  h4 Books by #{author.name}
+  for book in books
+    h2 #{book.title}

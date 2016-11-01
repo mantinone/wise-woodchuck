@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon ./bin/www",
+    "db": "dropdb woodchuckBooks; createdb woodchuckBooks; psql woodchuckBooks < schema.sql; psql woodchuckBooks < seed.sql"
+  },
+  "engines": {
+    "node": "6.6.0"
   },
   "dependencies": {
     "body-parser": "~1.15.2",

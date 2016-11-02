@@ -9,6 +9,7 @@ block content
       a(href='/author/#{author.id}')
         h2 #{author.name}
     h4 #{book.publication_date}
+    h3 Price: $#{book.price}
     h3 Genres
     for tag in genres
       p #{tag.item}

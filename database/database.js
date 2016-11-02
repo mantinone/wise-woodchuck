@@ -3,7 +3,7 @@ const connectionString = process.env.DATABASE_URL || `postgres://${process.env.U
 const pgp = require('pg-promise')();
 const db = pgp( connectionString );
 
-const getBook = `SELECT * FROM book WHERE book.id=$1`
+const getBook = `SELECT id, title, publication_date, description, img_url, price::money::numeric::float8 FROM book WHERE book.id=$1`
 const getLimitBooks = `SELECT * FROM (
 SELECT author.id AS author_id, book.id AS book_id, book.title, book.img_url, book.price, author.name,
 ROW_NUMBER() OVER (PARTITION BY book.id ORDER BY book.id ASC)
@@ -49,8 +49,29 @@ const addBookAuthor = `
 const getAllAuthors = `
   SELECT name, id FROM author
 `
+const editAuthorDetails = `
+  UPDATE author SET name = $1, bio = $2, img_url = $3
+`
+
+const editBookDetails = `
+  UPDATE book SET title = $1, publication_date = $2, description = $3, img_url = $4, price = $5 WHERE id=$6 RETURNING *
+`
+
+const bookIsActive = `
+  UPDATE book SET is_active = $1
+`
+
+const authorIsActive = `
+  UPDATE author SET is_active = $1
+`
+
+const editGenre = `
+  UPDATE tag SET item = $1, description = $2
+`
 
 const Book = {
+  delete: value => db.one(bookIsActive, [value.is_active]),
+  editDetails: attributes => db.one(editBookDetails, [attributes.title, attributes.publication_date, attributes.description, attributes.img_url, attributes.price, attributes.id ]),
   getDetails: book_id => db.one(getBook, [book_id]),
   getAuthors: book_id => db.any(getAuthorByBookId, [book_id]),
   getGenres: book_id => db.any(getGenreByBookId, [book_id]),
@@ -59,14 +80,16 @@ const Book = {
 }
 
 const Author = {
+  delete: value => db.one(authorIsActive, [value.is_active]),
+  editDetails: attributes => db.one(editAuthorDetails, [attributes.name, attributes.bio, attributes.img_url ]),
   getDetails: author_id => db.one(getAuthor, [author_id]),
   getBooks: author_id => db.any(getBookByAuthorId, [author_id]),
   getAll: () => db.any(getAllAuthors),
   bookAuthor: (author_id, book_id) => db.any(addBookAuthor, [author_id, book_id])
-  //bookAuthor: (book_id, author_id) => db.one(addBookAuthor, [book_id, author_id])
 }
 
 const Genre = {
+  editDetails: attributes => db.one(editGenre, [attributes.tag, attributes.description]),
   getDetails: tag_id => db.one(getGenre, [tag_id]),
   getAll: () => db.any(getGenres),
   getBooks: tag_id => db.any(getBooksByGenreId, [tag_id])

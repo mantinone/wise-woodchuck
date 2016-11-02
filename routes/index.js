@@ -14,14 +14,6 @@ router.get('/', (request, response) => {
   })
 })
 
-router.get('/book/:book_id', (request, response) => {
-  const {book_id} = request.params
-  Promise.all([  Book.getDetails(book_id), Book.getAuthors(book_id), Book.getGenres(book_id)])
-  .then( data => {
-    const [ book, authors, genres] = data
-    response.render('bookDetails', {book, authors, genres})
-  })
-})
 
 router.get('/genre', (request, response) => {
   Genre.getAll()
@@ -53,6 +45,39 @@ router.get('/addAuthor', (request, response) => {
   response.render('addAuthor', {
   })
   return
+})
+
+router.get('/book/:book_id/edit', (request, response) => {
+  const {book_id} = request.params
+  Book.getDetails(book_id)
+  .then( book => {
+    var s = ""
+    s = s + book.publication_date
+    // var n = s.indexOf('T')
+    s = s.substring(4, 15)
+    book.publication_date = s
+     //response.send(book)
+    response.render('editBook', book)
+  })
+})
+
+router.post('/book/:book_id/edit', (request, response) => {
+  const ourBook = request.body
+  ourBook.id = request.params.book_id
+  Book.editDetails(ourBook)
+  .then( data => {
+    console.log("Do we have a book: " + data)
+    response.redirect( `/book/${data.id}` )
+  })
+})
+
+router.get('/book/:book_id', (request, response) => {
+  const {book_id} = request.params
+  Promise.all([  Book.getDetails(book_id), Book.getAuthors(book_id), Book.getGenres(book_id)])
+  .then( data => {
+    const [ book, authors, genres] = data
+    response.render('bookDetails', {book, authors, genres})
+  })
 })
 
 router.get('/addBook', (request, response) => {

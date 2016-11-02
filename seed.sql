@@ -199,7 +199,7 @@ insert into author (name, bio, img_url, is_active) values ('Bobby Wilson', 'In h
 insert into author (name, bio, img_url, is_active) values ('Jane George', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 'http://dummyimage.com/225x139.png/ff4444/ffffff', true);
 insert into author (name, bio, img_url, is_active) values ('Theresa Cunningham', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 'http://dummyimage.com/125x133.png/cc0000/ffffff', true);
 
-insert into book (title, publication_date, description, img_url, is_active, price) values ('Veribet', '10/7/2016', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 'http://dummyimage.com/131x130.jpg/dddddd/000000', true, '$8.45');
+insert into book (title, publication_date, description, img_url, is_active, price) values ('Veribet', '10/7/2016', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 'http://cdn.movieweb.com/img.site/PHqgOEPBkHRkuv_1_l.jpg', true, '$8.45');
 insert into book (title, publication_date, description, img_url, is_active, price) values ('Temp', '7/17/2016', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
 
 Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 'http://dummyimage.com/137x121.bmp/cc0000/ffffff', true, '$9.74');

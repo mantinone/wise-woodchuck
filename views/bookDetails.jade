@@ -5,6 +5,7 @@ block content
   h1 #{book.title}
   h4 by:
   for person in author
-    h2 #{person.name}
+    a(href='/author/#{person.id}')
+      h2 #{person.name}
   h4 #{book.publication_date}
   p #{book.description}

@@ -6,4 +6,5 @@ block content
   p #{author.bio}
   h4 Books by #{author.name}
   for book in books
-    h2 #{book.title}
+    a(href='/book/#{book.id}')
+      h2 #{book.title}

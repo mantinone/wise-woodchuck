@@ -3,9 +3,16 @@ var router = express.Router();
 const { Book, Author } = require('../database/database.js')
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Woodchuck Books' });
-});
+router.get('/', (request, response) => {
+  const {query} = request
+  const page = parseInt( query.page || 1)
+  const size = parseInt( query.size || 10)
+  const nextPage = page+1
+  const previousPage = page - 1 > 0 ? page -1: 1
+  Book.getLimit(size, page).then( books => {
+    response.render('index', { books, page, size, nextPage, previousPage })
+  })
+})
 
 router.get('/book/:book_id', (request, response) => {
   const {book_id} = request.params

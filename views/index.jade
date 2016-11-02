@@ -1,13 +1,16 @@
 extends layout
 
 block content
+  
   .bookList
     for book in books
       .bookThumbnail
         a(href='/book/#{book.book_id}')
           img(src='#{book.img_url}', height='200', width='200')
           p.Title #{book.title}
+        a(href='/author/#{book.author_id}')
           p by #{book.name}
+        p #{book.price}
         //- p.Author Gary Whitta
 
   .flex-container

@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  div
+    h1 #{genre.item}
+    p #{genre.description}
+    h4 Books in this genre
+    .bookList
+      for book in books
+        .bookThumbnail
+          a(href='/book/#{book.id}')
+            img(src='#{book.img_url}', alt="this is a photo of the book", height="200", width="200")
+            p.Title #{book.title}

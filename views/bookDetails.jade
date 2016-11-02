@@ -1,11 +1,15 @@
 extends layout
 
 block content
-  img(src='#{book.img_url}', alt="this is a photo of the book", height="420", width="420")
-  h1 #{book.title}
-  h4 by:
-  for person in author
-    a(href='/author/#{person.id}')
-      h2 #{person.name}
-  h4 #{book.publication_date}
-  p #{book.description}
+  div
+    img(src='#{book.img_url}', alt="this is a photo of the book", height="420", width="420")
+    h1 #{book.title}
+    h4 by:
+    for author in authors
+      a(href='/author/#{author.id}')
+        h2 #{author.name}
+    h4 #{book.publication_date}
+    h3 Genres
+    for tag in genres
+      p #{tag.item}
+    p #{book.description}

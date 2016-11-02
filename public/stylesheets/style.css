@@ -9,13 +9,28 @@ a {
   color: #84B082;
 }
 
+.title{
+  font-size:4em;
+}
+
+div {
+  background-color: #3F3244;
+  margin: 6px;
+  padding: 6px;
+}
+
 
 .bookList {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #3F3244
+}
+
+.nav{
+  display: flex;
+  background-color: #504050;
+  justify-content: space-between;
 }
 
 .bookThumbnail {

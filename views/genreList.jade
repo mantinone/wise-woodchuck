@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  div
+    for genre in genres
+      a(href='/genre/#{genre.id}')
+        h2 #{genre.item}
+      p #{genre.description}

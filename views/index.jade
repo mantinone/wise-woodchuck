@@ -5,14 +5,15 @@ block content
   .bookList
     for book in books
       .bookThumbnail
-        img(src='#{book.img_url}', height='200', width='200')
-        p.Title #{book.title}
+        a(href='/book/#{book.id}')
+          img(src='#{book.img_url}', height='200', width='200')
+          p.Title #{book.title}
         //- p.Author Gary Whitta
 
-  .prevNext
-    div
+  .flex-container
+    .cornerButtons
       p STUFF
       a(href='/?page=#{previousPage}') Previous
-    div
+    .cornerButtons
       p THINGS
       a(href='/?page=#{nextPage}') Next

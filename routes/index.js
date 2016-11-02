@@ -32,11 +32,24 @@ router.get('/addAuthor', (request, response) => {
 })
 
 router.get('/addBook', (request, response) => {
-  response.render('addBook', {
+  Author.getAll()
+  .then( data => {
+    response.render('addBook', {
+      data
+    })
   })
   return
 })
 
-// router.post('/addBook', db.createBook);
+
+router.post('/addBook', (request, response) => {
+  const author_id = request.body.author_id
+  Book.createBook(request.body)
+  .then( book => {
+    const book_id = book.id
+    Author.bookAuthor( author_id, book_id )
+    response.redirect(`/book/${book_id}`)
+  })
+})
 
 module.exports = router;

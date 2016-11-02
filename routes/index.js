@@ -25,4 +25,31 @@ router.get('/author/:author_id', (request, response) => {
   })
 })
 
+router.get('/addAuthor', (request, response) => {
+  response.render('addAuthor', {
+  })
+  return
+})
+
+router.get('/addBook', (request, response) => {
+  Author.getAll()
+  .then( data => {
+    response.render('addBook', {
+      data
+    })
+  })
+  return
+})
+
+
+router.post('/addBook', (request, response) => {
+  const author_id = request.body.author_id
+  Book.createBook(request.body)
+  .then( book => {
+    const book_id = book.id
+    Author.bookAuthor( author_id, book_id )
+    response.redirect(`/book/${book_id}`)
+  })
+})
+
 module.exports = router;

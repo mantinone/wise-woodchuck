@@ -4,6 +4,11 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    a(href='/?page=1')
-      h1 Woodchuck Books
+    .nav
+      a.title(href='/?page=1') Woodchuck Books
+      button.button( onclick="window.location.href='/addAuthor'") Add Author
+      button.button( onclick="window.location.href='/addBook'") Add Book
+
+      a(href='/genre') List of Genres
+
     block content

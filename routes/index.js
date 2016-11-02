@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const { Book, Author } = require('../database/database.js')
+const { Book, Author, Genre } = require('../database/database.js')
 
 /* GET home page. */
 router.get('/', (request, response) => {
@@ -16,12 +16,29 @@ router.get('/', (request, response) => {
 
 router.get('/book/:book_id', (request, response) => {
   const {book_id} = request.params
-  Promise.all([  Book.getDetails(book_id), Book.getAuthors(book_id)])
+  Promise.all([  Book.getDetails(book_id), Book.getAuthors(book_id), Book.getGenres(book_id)])
   .then( data => {
-    const [ book, author] = data
-    response.render('bookDetails', {book, author})
+    const [ book, authors, genres] = data
+    response.render('bookDetails', {book, authors, genres})
   })
 })
+
+router.get('/genre', (request, response) => {
+  Genre.getAll()
+  .then( genres => {
+    response.render('genreList', {genres} )
+    //response.send(genres)
+  })
+})
+
+router.get('/genre/:genre_id', (request, response) => {
+  const genre_id = request.params.genre_id
+  Promise.all([Genre.getDetails(genre_id), Genre.getBooks(genre_id)])
+  .then( data => {
+    const [ genre, books ] = data
+    response.render( 'genreDetails', { genre, books } )
+  })
+} )
 
 router.get('/author/:author_id', (request, response) => {
   const author_id = request.params.author_id

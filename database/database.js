@@ -4,7 +4,12 @@ const pgp = require('pg-promise')();
 const db = pgp( connectionString );
 
 const getBook = `SELECT * FROM book WHERE book.id=$1`
-const getLimitBooks = `SELECT * FROM book LIMIT $1 OFFSET $2`
+const getLimitBooks = `SELECT * FROM (
+SELECT author.id AS author_id, book.id AS book_id, book.title, book.img_url, book.price, author.name,
+ROW_NUMBER() OVER (PARTITION BY book.id ORDER BY book.id ASC)
+FROM book LEFT JOIN book_author ON book_author.book_id=book.id
+LEFT JOIN author ON author.id=book_author.author_id) b WHERE row_number=1
+LIMIT $1 OFFSET $2`
 const getAuthor = `SELECT * FROM author WHERE author.id=$1`
 
 const getAuthorByBookId = `

@@ -474,7 +474,7 @@ insert into book_author (author_id, book_id) values (91, 35);
 insert into book_author (author_id, book_id) values (53, 88);
 insert into book_author (author_id, book_id) values (73, 83);
 insert into book_author (author_id, book_id) values (18, 95);
-insert into book_author (author_id, book_id) values (78, 7);
+insert into book_author (author_id, book_id) values (78, 8);
 insert into book_author (author_id, book_id) values (19, 89);
 insert into book_author (author_id, book_id) values (28, 72);
 insert into book_author (author_id, book_id) values (91, 75);

@@ -3,39 +3,16 @@ extends layout
 block content
   h1 Woodchuck Books
   .bookList
-    .bookThumbnail
-      img(src='http://cdn.movieweb.com/img.site/PHqgOEPBkHRkuv_1_l.jpg', height='200', width='200')
-      p.Title Rogue One
-      p.Author Gary Whitta
-    .bookThumbnail
-      img(src='http://cdn.movieweb.com/img.site/PHqgOEPBkHRkuv_1_l.jpg', height='200', width='200')
-      p.Title Rogue One
-      p.Author Gary Whitta
-    .bookThumbnail
-      img(src='http://cdn.movieweb.com/img.site/PHqgOEPBkHRkuv_1_l.jpg', height='200', width='200')
-      p.Title Rogue One
-      p.Author Gary Whitta
-    .bookThumbnail
-      img(src='http://cdn.movieweb.com/img.site/PHqgOEPBkHRkuv_1_l.jpg', height='200', width='200')
-      p.Title Rogue One
-      p.Author Gary Whitta
-    .bookThumbnail
-      img(src='http://cdn.movieweb.com/img.site/PHqgOEPBkHRkuv_1_l.jpg', height='200', width='200')
-      p.Title Rogue One
-      p.Author Gary Whitta
-    .bookThumbnail
-      img(src='http://cdn.movieweb.com/img.site/PHqgOEPBkHRkuv_1_l.jpg', height='200', width='200')
-      p.Title Rogue One
-      p.Author Gary Whitta
-    .bookThumbnail
-      img(src='http://cdn.movieweb.com/img.site/PHqgOEPBkHRkuv_1_l.jpg', height='200', width='200')
-      p.Title Rogue One
-      p.Author Gary Whitta
-    .bookThumbnail
-      img(src='http://cdn.movieweb.com/img.site/PHqgOEPBkHRkuv_1_l.jpg', height='200', width='200')
-      p.Title Rogue One
-      p.Author Gary Whitta
-    .bookThumbnail
-      img(src='http://cdn.movieweb.com/img.site/PHqgOEPBkHRkuv_1_l.jpg', height='200', width='200')
-      p.Title Rogue One
-      p.Author Gary Whitta
+    for book in books
+      .bookThumbnail
+        img(src='#{book.img_url}', height='200', width='200')
+        p.Title #{book.title}
+        //- p.Author Gary Whitta
+
+  .prevNext
+    div
+      p STUFF
+      a(href='/?page=#{previousPage}') Previous
+    div
+      p THINGS
+      a(href='/?page=#{nextPage}') Next

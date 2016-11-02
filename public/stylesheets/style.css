@@ -38,8 +38,14 @@ a {
     border: 1px solid #8E8E8E;
 }
 
-form {
+.prevNext {
   display:flex;
+  flex-direction: row;
+  justify_content: space-between;
+}
+
+form {
+  display: flex;
   flex-wrap: wrap;
   max-width: 1000px;
   margin-top: 10px;

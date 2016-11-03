@@ -64,6 +64,14 @@ router.get('/addAuthor', (request, response) => {
   return
 })
 
+router.post('/addAuthor', (request, response) => {
+  Author.createAuthor(request.body)
+  .then( ourAuthor => {
+    const author_id = ourAuthor.id
+    response.redirect(`/author/${author_id}`)
+  })
+})
+
 router.get('/book/:book_id/edit', (request, response) => {
   const {book_id} = request.params
   Book.getDetails(book_id)

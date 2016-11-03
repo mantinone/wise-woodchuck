@@ -47,7 +47,8 @@ CREATE TABLE transaction (
   customer_id INTEGER REFERENCES customer(id),
   order_date DATE NOT NULL,
   total DECIMAL NOT NULL DEFAULT 0,
-  is_active BOOLEAN DEFAULT TRUE
+  is_active BOOLEAN DEFAULT TRUE,
+  is_complete BOOLEAN DEFAULT FALSE
 );
 
 DROP TABLE IF EXISTS book_tag;

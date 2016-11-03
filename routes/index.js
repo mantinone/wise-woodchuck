@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const { Book, Author, Genre } = require('../database/database.js')
+const { Book, Author, Genre, Transaction } = require('../database/database.js')
 
 /* GET home page. */
 router.get('/', (request, response) => {
@@ -123,6 +123,15 @@ router.post('/addBook', (request, response) => {
     const book_id = book.id
     Author.bookAuthor( author_id, book_id )
     response.redirect(`/book/${book_id}`)
+  })
+})
+
+router.get('/cart/:transaction_id', (request,response) => {
+  const transaction_id = request.body.transaction_id
+  Promise.all([ Transaction.getDetails( transaction_id), Transaction.getCartItems(transaction_id) ])
+  .then( data => {
+    const [transaction, books] = data
+    response.render('cart', {transaction, books})
   })
 })
 

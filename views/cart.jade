@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  div
+    for book in books
+      .bookThumbnail
+        img(src='#{book.img_url}', alt="this is a photo of the book", height="420", width="420")
+        h1 #{book.title}
+        h3 Price: $#{book.price}

@@ -124,6 +124,12 @@ const setTotal = `
   RETURNING *
 `
 
+const findOpenTransactions = `
+  SELECT *
+  FROM transaction
+  WHERE customer_id=$1 AND is_complete=false
+`
+
 const Book = {
   delete: value => db.one(bookIsActive, [value.is_active]),
   editDetails: attributes => db.one(editBookDetails, [attributes.title, attributes.publication_date, attributes.description, attributes.img_url, attributes.price, attributes.id ]),
@@ -162,7 +168,8 @@ const Transaction = {
   addNew: attributes => db.one(createTransaction, [attributes.customer_id, attributes.total]),
   updateTotal: (total, id) => db.one(setTotal, [total, id]),
   orderComplete: is_complete => db.one(setIsComplete, [is_complete]),
-  orderActive: is_active => db.one(setIsActive, [is_active])
+  orderActive: is_active => db.one(setIsActive, [is_active]),
+  isOpen: customer_id => db.one(findOpenTransaction, [customer_id])
 }
 
 module.exports = { Book, Author, Genre, Transaction }

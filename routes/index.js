@@ -32,6 +32,23 @@ router.get('/genre/:genre_id', (request, response) => {
   })
 } )
 
+router.get('/author/:author_id/edit', (request, response) => {
+  const {author_id} = request.params
+  Author.getDetails(author_id)
+  .then( author => {
+    response.render('editAuthor', author)
+  })
+})
+
+router.post('/author/:author_id/edit', (request, response) => {
+  const ourAuthor = request.body
+  ourAuthor.id = request.params.author_id
+  Author.editDetails(ourAuthor)
+  .then( data => {
+    response.redirect( `/author/${data.id}` )
+  })
+})
+
 router.get('/author/:author_id', (request, response) => {
   const author_id = request.params.author_id
   Promise.all([ Author.getDetails(author_id), Author.getBooks(author_id)])

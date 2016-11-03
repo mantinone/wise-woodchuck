@@ -10,6 +10,7 @@ ROW_NUMBER() OVER (PARTITION BY book.id ORDER BY book.id ASC)
 FROM book LEFT JOIN book_author ON book_author.book_id=book.id
 LEFT JOIN author ON author.id=book_author.author_id) b WHERE row_number=1
 LIMIT $1 OFFSET $2`
+
 const getAuthor = `SELECT * FROM author WHERE author.id=$1`
 const getGenres = `SELECT * FROM tag`
 const getGenre = `SELECT * FROM tag WHERE id=$1`
@@ -50,7 +51,7 @@ const getAllAuthors = `
   SELECT name, id FROM author
 `
 const editAuthorDetails = `
-  UPDATE author SET name = $1, bio = $2, img_url = $3
+  UPDATE author SET name = $1, bio = $2, img_url = $3 WHERE id=$4 RETURNING *
 `
 
 const editBookDetails = `
@@ -81,7 +82,7 @@ const Book = {
 
 const Author = {
   delete: value => db.one(authorIsActive, [value.is_active]),
-  editDetails: attributes => db.one(editAuthorDetails, [attributes.name, attributes.bio, attributes.img_url ]),
+  editDetails: attributes => db.one(editAuthorDetails, [attributes.name, attributes.bio, attributes.img_url, attributes.id ]),
   getDetails: author_id => db.one(getAuthor, [author_id]),
   getBooks: author_id => db.any(getBookByAuthorId, [author_id]),
   getAll: () => db.any(getAllAuthors),

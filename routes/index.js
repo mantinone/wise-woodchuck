@@ -169,9 +169,22 @@ router.post('/cart/confirm/:transaction_id', (request, response) => {
   const transaction_id = request.params.transaction_id
   Transaction.orderComplete(transaction_id)
   .then( result => {
-    response.render('orderConfirmed', result)
+    response.render('message', {result, message1: 'Order Confirmed!', message2: 'The selected books are now being shipped to your address!', message3: 'If this were a real website, we might have confirmed payment and sent you an email and stuff.'})
   })
   .catch( error => response.render('error', { error : error }));
+})
+
+router.get('/see/cart', (request, response) => {
+  const customer_id = 2
+  Transaction.isOpen(customer_id)
+  .then( transaction => {
+    if(transaction){
+      const transaction_id = transaction.id
+      response.redirect(`/cart/${transaction_id}`)
+    } else {
+      response.render('message', { message1: 'No Cart Exists', message2: 'Try going to our store and ordering some books first.', message3:''})
+    }
+  })
 })
 
 module.exports = router;

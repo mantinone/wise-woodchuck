@@ -15,3 +15,7 @@ block content
       p #{tag.item}
     p #{book.description}
     button.button( onclick="window.location.href='/book/#{book.id}/edit'" ) Edit Book
+    form( method='post' action= '/cart/add/#{book.id}' )
+      label How many copies?
+      input.shortBox(type='text' name='copies' placeholder='How many copies?' value='1')
+      button.button( name='price' value='#{book.price}' type='submit' ) Order Book

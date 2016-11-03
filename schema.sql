@@ -47,7 +47,8 @@ CREATE TABLE transaction (
   customer_id INTEGER REFERENCES customer(id),
   order_date DATE NOT NULL,
   total DECIMAL NOT NULL DEFAULT 0,
-  is_active BOOLEAN DEFAULT TRUE
+  is_active BOOLEAN DEFAULT TRUE,
+  is_complete BOOLEAN DEFAULT FALSE
 );
 
 DROP TABLE IF EXISTS book_tag;
@@ -68,5 +69,6 @@ DROP TABLE IF EXISTS book_transaction;
 
 CREATE TABLE book_transaction (
   transaction_id INTEGER REFERENCES transaction(id),
-  book_id INTEGER REFERENCES book(id)
+  book_id INTEGER REFERENCES book(id),
+  copies INTEGER DEFAULT 1
 );

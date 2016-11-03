@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const { Book, Author, Genre } = require('../database/database.js')
+const { Book, Author, Genre, Transaction } = require('../database/database.js')
 
 /* GET home page. */
 router.get('/', (request, response) => {
@@ -64,6 +64,14 @@ router.get('/addAuthor', (request, response) => {
   return
 })
 
+router.post('/addAuthor', (request, response) => {
+  Author.createAuthor(request.body)
+  .then( ourAuthor => {
+    const author_id = ourAuthor.id
+    response.redirect(`/author/${author_id}`)
+  })
+})
+
 router.get('/book/:book_id/edit', (request, response) => {
   const {book_id} = request.params
   Book.getDetails(book_id)
@@ -115,6 +123,67 @@ router.post('/addBook', (request, response) => {
     const book_id = book.id
     Author.bookAuthor( author_id, book_id )
     response.redirect(`/book/${book_id}`)
+  })
+})
+
+router.get('/cart/:transaction_id', (request,response) => {
+  const transaction_id = request.params.transaction_id
+  Promise.all([ Transaction.getDetails( transaction_id), Transaction.getCartItems(transaction_id) ])
+  .then( data => {
+    const [transaction, books] = data
+    response.render('cart', {transaction, books})
+  })
+})
+
+router.post('/cart/add/:book_id', (request, response) => {
+  const book_id = request.params.book_id
+  const copies = request.body.copies
+  const book_price = request.body.price * copies
+  const customer_id = 1 //This is a hard-coded user variable in place because we have no user authentication
+  Transaction.isOpen(customer_id)
+  .then( transaction => {
+    if (transaction){
+      const transaction_id = transaction.id
+      Transaction.addBook(transaction_id, book_id, copies)
+      .then( result => {
+        Transaction.updateTotal(transaction_id)
+        .then( result => {
+          response.redirect(`/cart/${transaction_id}`)
+        })
+      })
+    } else{
+      Transaction.addNew(customer_id, book_price)
+      .then( transaction => {
+        const transaction_id = transaction.id
+        Transaction.addBook(transaction_id, book_id, copies)
+        .then(result => {
+          response.redirect(`/cart/${transaction_id}`)
+        })
+      })
+    }
+  })
+
+})
+
+router.post('/cart/confirm/:transaction_id', (request, response) => {
+  const transaction_id = request.params.transaction_id
+  Transaction.orderComplete(transaction_id)
+  .then( result => {
+    response.render('message', {result, message1: 'Order Confirmed!', message2: 'The selected books are now being shipped to your address!', message3: 'If this were a real website, we might have confirmed payment and sent you an email and stuff.'})
+  })
+  .catch( error => response.render('error', { error : error }));
+})
+
+router.get('/see/cart', (request, response) => {
+  const customer_id = 2
+  Transaction.isOpen(customer_id)
+  .then( transaction => {
+    if(transaction){
+      const transaction_id = transaction.id
+      response.redirect(`/cart/${transaction_id}`)
+    } else {
+      response.render('message', { message1: 'No Cart Exists', message2: 'Try going to our store and ordering some books first.', message3:''})
+    }
   })
 })
 

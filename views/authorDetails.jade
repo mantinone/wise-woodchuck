@@ -8,3 +8,4 @@ block content
   for book in books
     a(href='/book/#{book.id}')
       h2 #{book.title}
+  button.button( onclick="window.location.href='/author/#{author.id}/edit'" ) Edit Author

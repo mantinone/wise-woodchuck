@@ -14,3 +14,4 @@ block content
     for tag in genres
       p #{tag.item}
     p #{book.description}
+    button.button( onclick="window.location.href='/book/#{book.id}/edit'" ) Edit Book

@@ -1,9 +1,16 @@
 extends layout
 
 block content
-  div
+  .bookList
     for book in books
       .bookThumbnail
-        img(src='#{book.img_url}', alt="this is a photo of the book", height="420", width="420")
-        h1 #{book.title}
-        h3 Price: $#{book.price}
+        a(href='/book/#{book.book_id}')
+          img(src='#{book.img_url}', alt="this is a photo of the book", height="100", width="100")
+          h3 #{book.title}
+        h4 Price: #{book.price}
+        p Copies: #{book.copies}
+
+  div
+    h2 Subtotal: $#{transaction.total}
+    form(method='post' action='/cart/confirm/#{transaction.id}')
+      button.button Confirm Order

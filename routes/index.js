@@ -127,12 +127,51 @@ router.post('/addBook', (request, response) => {
 })
 
 router.get('/cart/:transaction_id', (request,response) => {
-  const transaction_id = request.body.transaction_id
+  const transaction_id = request.params.transaction_id
   Promise.all([ Transaction.getDetails( transaction_id), Transaction.getCartItems(transaction_id) ])
   .then( data => {
     const [transaction, books] = data
     response.render('cart', {transaction, books})
   })
+})
+
+router.post('/cart/add/:book_id', (request, response) => {
+  const book_id = request.params.book_id
+  const copies = request.body.copies
+  const book_price = request.body.price * copies
+  const customer_id = 1 //This is a hard-coded user variable in place because we have no user authentication
+  Transaction.isOpen(customer_id)
+  .then( transaction => {
+    if (transaction){
+      const transaction_id = transaction.id
+      Transaction.addBook(transaction_id, book_id, copies)
+      .then( result => {
+        Transaction.updateTotal(transaction_id)
+        .then( result => {
+          response.redirect(`/cart/${transaction_id}`)
+        })
+      })
+    } else{
+      Transaction.addNew(customer_id, book_price)
+      .then( transaction => {
+        const transaction_id = transaction.id
+        Transaction.addBook(transaction_id, book_id, copies)
+        .then(result => {
+          response.redirect(`/cart/${transaction_id}`)
+        })
+      })
+    }
+  })
+
+})
+
+router.post('/cart/confirm/:transaction_id', (request, response) => {
+  const transaction_id = request.params.transaction_id
+  Transaction.orderComplete(transaction_id)
+  .then( result => {
+    response.render('orderConfirmed', result)
+  })
+  .catch( error => response.render('error', { error : error }));
 })
 
 module.exports = router;

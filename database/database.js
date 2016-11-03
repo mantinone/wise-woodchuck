@@ -78,15 +78,24 @@ const editGenre = `
 `
 
 const getCartItems = `
-  SELECT book.title, book.id
+  SELECT *
   FROM book JOIN book_transaction ON book.id=book_transaction.book_id
   WHERE book_transaction.transaction_id=$1
 `
 
 const getCartTotal = `
-  SELECT SUM(book.price)
+  SELECT SUM(book.price*book_transaction.copies)
   FROM book JOIN book_transaction ON book.id=book_transaction.book_id
   WHERE book_transaction.transaction_id=$1
+`
+
+const setTotal = `
+UPDATE transaction
+SET total = (SELECT SUM(book.price*book_transaction.copies)
+FROM book JOIN book_transaction ON book.id=book_transaction.book_id
+WHERE book_transaction.transaction_id=$1)
+WHERE id = $1
+RETURNING *
 `
 
 const getTransactionById = `
@@ -94,8 +103,8 @@ const getTransactionById = `
 `
 
 const addBookToCart = `
-  INSERT INTO book_transaction (book_id, transaction_id)
-  VALUES($1, $2) RETURNING *
+  INSERT INTO book_transaction (transaction_id, book_id, copies)
+  VALUES($1, $2, $3) RETURNING *
 `
 
 const createTransaction =`
@@ -117,17 +126,11 @@ const setIsActive = `
   RETURNING *
 `
 
-const setTotal = `
-  UPDATE transaction
-  SET total = $1
-  WHERE id = $2
-  RETURNING *
-`
-
 const findOpenTransactions = `
   SELECT *
   FROM transaction
   WHERE customer_id=$1 AND is_complete=false
+  LIMIT 1
 `
 
 const Book = {
@@ -164,12 +167,12 @@ const Transaction = {
   getCartItems: transaction_id => db.any(getCartItems, [transaction_id]),
   getTotal: transaction_id => db.one(getCartTotal, [transaction_id]),
   getDetails: transaction_id => db.one(getTransactionById, [transaction_id]),
-  addBook: (transaction_id, book_id) => db.one(addBookToCart, [transaction_id, book_id]),
-  addNew: attributes => db.one(createTransaction, [attributes.customer_id, attributes.total]),
-  updateTotal: (total, id) => db.one(setTotal, [total, id]),
-  orderComplete: is_complete => db.one(setIsComplete, [is_complete]),
+  addBook: (transaction_id, book_id, copies) => db.one(addBookToCart, [transaction_id, book_id, copies]),
+  addNew: (customer_id, total) => db.one(createTransaction, [customer_id, total]),
+  updateTotal: transaction_id => db.one(setTotal, [transaction_id]),
+  orderComplete: transaction_id => db.one(setIsComplete, [transaction_id]),
   orderActive: is_active => db.one(setIsActive, [is_active]),
-  isOpen: customer_id => db.one(findOpenTransaction, [customer_id])
+  isOpen: customer_id => db.oneOrNone(findOpenTransactions, [customer_id])
 }
 
 module.exports = { Book, Author, Genre, Transaction }

@@ -69,5 +69,6 @@ DROP TABLE IF EXISTS book_transaction;
 
 CREATE TABLE book_transaction (
   transaction_id INTEGER REFERENCES transaction(id),
-  book_id INTEGER REFERENCES book(id)
+  book_id INTEGER REFERENCES book(id),
+  copies INTEGER DEFAULT 1
 );

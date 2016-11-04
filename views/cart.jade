@@ -12,5 +12,9 @@ block content
 
   div
     h2 Subtotal: $#{transaction.total}
-    form(method='post' action='/cart/confirm/#{transaction.id}')
-      button.button Confirm Order
+    if transaction.is_complete
+      p Order Sent
+    else
+
+      form(method='post' action='/cart/confirm/#{transaction.id}')
+        button.button Confirm Order

@@ -6,11 +6,12 @@ const { Book, Author, Genre, Transaction, Search } = require('../database/databa
 router.get('/', (request, response) => {
   const {query} = request
   const page = parseInt( query.page || 1)
-  const size = parseInt( query.size || 10)
+  const size = parseInt( 10)
   const nextPage = page+1
+  const isSearch = false
   const previousPage = page - 1 > 0 ? page -1: 1
   Book.getLimit(size, page).then( books => {
-    response.render('index', { books, page, size, nextPage, previousPage })
+    response.render('index', { books, page, size, nextPage, previousPage, isSearch })
   })
 })
 
@@ -189,10 +190,20 @@ router.get('/see/cart', (request, response) => {
 
 router.post('/search', (request, response) => {
   const searchq = request.body.searchq
-  console.log('IN THE ROUTE', searchq)
-  Search.findBooks(searchq)
+  response.redirect(`/search/?page=1&searchq=${searchq}`)
+})
+
+router.get('/search', (request, response) => {
+  const {query} = request
+  const searchq = query.searchq
+  const page = parseInt( query.page || 1)
+  const size = parseInt( 10)
+  const nextPage = page+1
+  const isSearch = true
+  const previousPage = page - 1 > 0 ? page -1: 1
+  Search.findBooks(searchq, size, page)
   .then( books => {
-    response.render('index', { books })
+    response.render('index', { books, page, size, nextPage, previousPage, isSearch, searchq })
   })
 })
 

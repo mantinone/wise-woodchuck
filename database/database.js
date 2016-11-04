@@ -140,17 +140,17 @@ JOIN author c ON c.id=b.author_id
 WHERE LOWER(a.title) LIKE $1
 OR LOWER(c.name) LIKE $1
 ORDER BY b.book_id ASC
+LIMIT $2 OFFSET $3
 `
 
 const Search = {
-  findBooks: searchq => {
+  findBooks: ( searchq, size, page ) => {
     let query = searchq
     .toLowerCase()
     .replace(/^ */, '%')
     .replace(/ *$/, '%')
     .replace(/ +/g, '%')
-    console.log("SHOW ME THE QUERY ", query)
-    return db.any( searchTerm, [query])
+    return db.any( searchTerm, [query, size, (page*size) - size])
   }
 }
 

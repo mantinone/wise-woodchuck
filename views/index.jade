@@ -1,7 +1,8 @@
 extends layout
 
 block content
-  
+  if isSearch
+    h3(name='searchq') Searching for: #{searchq}
   .bookList
     for book in books
       .bookThumbnail
@@ -16,7 +17,15 @@ block content
   .flex-container
     .cornerButtons
       p STUFF
-      a(href='/?page=#{previousPage}') Previous
+      if isSearch
+        a(href='/search/?page=#{previousPage}&searchq=#{searchq}') Previous
+      else
+
+        a(href='/?page=#{previousPage}') Previous
     .cornerButtons
       p THINGS
-      a(href='/?page=#{nextPage}') Next
+      if isSearch
+        a(href='/search/?page=#{nextPage}&searchq=#{searchq}') Next
+      else
+
+        a(href='/?page=#{nextPage}') Next

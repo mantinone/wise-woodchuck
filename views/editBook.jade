@@ -2,13 +2,8 @@ extends layout
 
 block content
   h1= title
-    //- a(class='button' id='addBook' href="/addBook") Add Book #{/*what put here?*/}
     h3 Enter information to edit this book:
       form(method="post" action='/book/#{id}/edit')
-        //- select(name="author_id")
-        //-   option(value=0) (CHOOSE AUTHOR)
-        //-   for author in data
-        //-     option(value=author.id) #{author.name}
         input(type="text", value="#{title}", name="title")
         input(type="date", value="#{publication_date}", name="publication_date")
         input(type="text", value="#{img_url}", name="img_url")

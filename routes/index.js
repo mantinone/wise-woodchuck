@@ -172,7 +172,7 @@ router.post('/cart/confirm/:transaction_id', (request, response) => {
 })
 
 router.get('/see/cart', (request, response) => {
-  const customer_id = 2 //This is a hard-coded user variable in place because we have no user authentication
+  const customer_id = 1 //This is a hard-coded user variable in place because we have no user authentication
   Transaction.isOpen(customer_id)
   .then( transaction => {
     if(transaction){

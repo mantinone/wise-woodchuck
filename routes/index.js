@@ -191,8 +191,8 @@ router.post('/search', (request, response) => {
   const searchq = request.body.searchq
   console.log('IN THE ROUTE', searchq)
   Search.findBooks(searchq)
-  .then( results => {
-    response.send(results)
+  .then( books => {
+    response.render('index', { books })
   })
 })
 

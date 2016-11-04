@@ -133,6 +133,14 @@ const findOpenTransactions = `
   LIMIT 1
 `
 
+const Search = {
+  findBooks: searchq => {
+    console.log('IN THE DB FILE', searchq)
+    return db.any('SELECT * FROM book')
+  }
+
+}
+
 const Book = {
   delete: value => db.one(bookIsActive, [value.is_active]),
   editDetails: attributes => db.one(editBookDetails, [attributes.title, attributes.publication_date, attributes.description, attributes.img_url, attributes.price, attributes.id ]),
@@ -175,4 +183,4 @@ const Transaction = {
   isOpen: customer_id => db.oneOrNone(findOpenTransactions, [customer_id])
 }
 
-module.exports = { Book, Author, Genre, Transaction }
+module.exports = { Book, Author, Genre, Transaction, Search }

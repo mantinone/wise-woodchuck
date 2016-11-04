@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const { Book, Author, Genre, Transaction } = require('../database/database.js')
+const { Book, Author, Genre, Transaction, Search } = require('../database/database.js')
 
 /* GET home page. */
 router.get('/', (request, response) => {
@@ -184,6 +184,15 @@ router.get('/see/cart', (request, response) => {
     } else {
       response.render('message', { message1: 'No Cart Exists', message2: 'Try going to our store and ordering some books first.', message3:''})
     }
+  })
+})
+
+router.post('/search', (request, response) => {
+  const searchq = request.body.searchq
+  console.log('IN THE ROUTE', searchq)
+  Search.findBooks(searchq)
+  .then( results => {
+    response.send(results)
   })
 })
 

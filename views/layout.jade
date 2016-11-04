@@ -6,14 +6,20 @@ html
   body
     .nav
       a.title(href='/?page=1') Woodchuck Books
+
       button.button( onclick="window.location.href='/addAuthor'") Add Author
       button.button( onclick="window.location.href='/addBook'") Add Book
+      button.button( onclick="window.location.href='/genre'") Genre List
 
-      a(href='/genre') List of Genres
-      a(href='/see/cart') View Cart
+      //- .cartBox
+      //-   a(href='/genre') List of Genres
 
-      form(method='post' action='/search/?page=1')
-        input(type='text' name='searchq' placeholder='Search by Title or by Author')
-        input(type='submit' class='button' value='search')
+      .cartBox
+        form(method='post' action='/search/?page=1')
+          input(type='text' name='searchq' placeholder='Search by Title or by Author')
+          input(type='submit' class='sButton' value='search')
+
+      .cartBox
+        a(href='/see/cart') View Cart
 
     block content

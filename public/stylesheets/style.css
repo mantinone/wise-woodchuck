@@ -19,6 +19,14 @@ div {
   padding: 6px;
 }
 
+.cartBox {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #504050;
+  margin: 6px;
+  padding: 6px;
+}
+
 .shortBox{
   height: 10px;
   max-width: 1px;
@@ -43,7 +51,8 @@ div {
 .bookThumbnail {
   padding: 10px;
   margin: 6px;
-  background-color: #60495A
+  background-color: #60495A;
+  border-radius: 5%;
 }
 
 .button{
@@ -51,6 +60,16 @@ div {
     padding: 10px 25px;
     border: 1px solid grey;
     border-radius: 4px;
+    background-color: #E5E5E5;
+    color: #111163;
+}
+
+.sButton{
+    height: 35px;
+    max-width: 1em;
+    padding: 6px 2px;
+    border: 1px solid grey;
+    border-radius: 1px;
     background-color: #E5E5E5;
     color: #111163;
 }

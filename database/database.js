@@ -133,6 +133,27 @@ const findOpenTransactions = `
   LIMIT 1
 `
 
+const searchTerm = `SELECT a.title, a.publication_date, a.img_url, a.is_active, a.price, b.author_id, b.book_id, c.name, c.bio, c.img_url AS author_img
+FROM book a
+JOIN book_author b ON b.book_id=a.id
+JOIN author c ON c.id=b.author_id
+WHERE LOWER(a.title) LIKE $1
+OR LOWER(c.name) LIKE $1
+ORDER BY b.book_id ASC
+`
+
+const Search = {
+  findBooks: searchq => {
+    let query = searchq
+    .toLowerCase()
+    .replace(/^ */, '%')
+    .replace(/ *$/, '%')
+    .replace(/ +/g, '%')
+    console.log("SHOW ME THE QUERY ", query)
+    return db.any( searchTerm, [query])
+  }
+}
+
 const Book = {
   delete: value => db.one(bookIsActive, [value.is_active]),
   editDetails: attributes => db.one(editBookDetails, [attributes.title, attributes.publication_date, attributes.description, attributes.img_url, attributes.price, attributes.id ]),
@@ -175,4 +196,4 @@ const Transaction = {
   isOpen: customer_id => db.oneOrNone(findOpenTransactions, [customer_id])
 }
 
-module.exports = { Book, Author, Genre, Transaction }
+module.exports = { Book, Author, Genre, Transaction, Search }

@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 const { Book, Author, Genre, Transaction, Search } = require('../database/database.js')
 
-/* GET home page. */
 router.get('/', (request, response) => {
   const {query} = request
   const page = parseInt( query.page || 1)
@@ -20,7 +19,6 @@ router.get('/genre', (request, response) => {
   Genre.getAll()
   .then( genres => {
     response.render('genreList', {genres} )
-    //response.send(genres)
   })
 })
 
@@ -79,10 +77,8 @@ router.get('/book/:book_id/edit', (request, response) => {
   .then( book => {
     var s = ""
     s = s + book.publication_date
-    // var n = s.indexOf('T')
     s = s.substring(4, 15)
     book.publication_date = s
-     //response.send(book)
     response.render('editBook', book)
   })
 })
@@ -176,7 +172,7 @@ router.post('/cart/confirm/:transaction_id', (request, response) => {
 })
 
 router.get('/see/cart', (request, response) => {
-  const customer_id = 2
+  const customer_id = 2 //This is a hard-coded user variable in place because we have no user authentication
   Transaction.isOpen(customer_id)
   .then( transaction => {
     if(transaction){

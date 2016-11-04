@@ -2,7 +2,6 @@ extends layout
 
 block content
   h1= title
-    //- a(class='button' id='addBook' href="/addBook") Add Book #{/*what put here?*/}
     h3 Enter information to create new book:
       form(method="post" action='/addBook')
         select(name="author_id")

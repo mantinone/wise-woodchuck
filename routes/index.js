@@ -3,16 +3,15 @@ var router = express.Router();
 const { Book, Author, Genre, Transaction, Search } = require('../database/database.js')
 
 router.get('/', (request, response) => {
-  response.send("Hello")
-  // const {query} = request
-  // const page = parseInt( query.page || 1)
-  // const size = parseInt( 10)
-  // const nextPage = page+1
-  // const isSearch = false
-  // const previousPage = page - 1 > 0 ? page -1: 1
-  // Book.getLimit(size, page).then( books => {
-  //   response.render('index', { books, page, size, nextPage, previousPage, isSearch })
-  // })
+  const {query} = request
+  const page = parseInt( query.page || 1)
+  const size = parseInt( 10)
+  const nextPage = page+1
+  const isSearch = false
+  const previousPage = page - 1 > 0 ? page -1: 1
+  Book.getLimit(size, page).then( books => {
+    response.render('index', { books, page, size, nextPage, previousPage, isSearch })
+  })
 })
 
 

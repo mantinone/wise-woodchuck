@@ -1,9 +1,15 @@
 # wise-woodchuck
-Simple Book Store Project
+
+This is an example of the Simple Bookstore project.  The goal was to create a basic CRUD app using Node, Express, Pug, and Postgres.  Created by users mantinone and DianaVashti.  
+
+The project can be viewed on Heroku at https://woodchuckbooks.herokuapp.com/ .
+
+Below are the project specs
 
 ## Description
 
 Create a simple content management system that allows users to add, delete, or update books.  Books entered in the system can be viewed in a listing, or searched for using basic searches (title, author, genre).
+
 ## Context
 
 Creating this web application will provide exposure to:

@@ -4,7 +4,7 @@ This is an example of the Simple Bookstore project.  The goal was to create a ba
 
 The project can be viewed on Heroku at https://woodchuckbooks.herokuapp.com/ .
 
-Below are the project specs
+Below are the project specs we were working from.
 
 ## Description
 
